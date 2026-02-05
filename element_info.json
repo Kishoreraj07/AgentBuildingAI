@@ -1,0 +1,178 @@
+{
+  "current_element": {
+    "name": "",
+    "control_type": "List",
+    "class_name": "SysListView32",
+    "auto_id": "-31813",
+    "value": "",
+    "handle": "1379890",
+    "process_id": "18324",
+    "rectangle": {
+      "left": 2,
+      "top": 459,
+      "right": 958,
+      "bottom": 776,
+      "width": 956,
+      "height": 317
+    }
+  },
+  "ancestors": [
+    {
+      "name": "Desktop 1",
+      "control_type": "Pane",
+      "class_name": "#32769",
+      "auto_id": "",
+      "value": "Desktop 1",
+      "handle": "65548",
+      "process_id": "1152",
+      "rectangle": {
+        "left": 0,
+        "top": 0,
+        "right": 1920,
+        "bottom": 1080,
+        "width": 1920,
+        "height": 1080
+      }
+    },
+    {
+      "name": "developers@207.211.181.213 - FileZilla",
+      "control_type": "Window",
+      "class_name": "wxWindowNR",
+      "auto_id": "",
+      "value": "developers@207.211.181.213 - FileZilla",
+      "handle": "9243830",
+      "process_id": "18324",
+      "rectangle": {
+        "left": -11,
+        "top": -11,
+        "right": 1931,
+        "bottom": 1019,
+        "width": 1942,
+        "height": 1030
+      }
+    },
+    {
+      "name": "splitterWindow",
+      "control_type": "Pane",
+      "class_name": "wxWindowNR",
+      "auto_id": "-31830",
+      "value": "splitterWindow",
+      "handle": "4197956",
+      "process_id": "18324",
+      "rectangle": {
+        "left": 0,
+        "top": 148,
+        "right": 1920,
+        "bottom": 975,
+        "width": 1920,
+        "height": 827
+      }
+    },
+    {
+      "name": "splitterWindow",
+      "control_type": "Pane",
+      "class_name": "wxWindowNR",
+      "auto_id": "-31829",
+      "value": "splitterWindow",
+      "handle": "29363792",
+      "process_id": "18324",
+      "rectangle": {
+        "left": 0,
+        "top": 249,
+        "right": 1920,
+        "bottom": 975,
+        "width": 1920,
+        "height": 726
+      }
+    },
+    {
+      "name": "splitter",
+      "control_type": "Pane",
+      "class_name": "wxWindowNR",
+      "auto_id": "-31820",
+      "value": "splitter",
+      "handle": "659132",
+      "process_id": "18324",
+      "rectangle": {
+        "left": 0,
+        "top": 249,
+        "right": 1920,
+        "bottom": 811,
+        "width": 1920,
+        "height": 562
+      }
+    },
+    {
+      "name": "splitterWindow",
+      "control_type": "Pane",
+      "class_name": "wxWindowNR",
+      "auto_id": "-31819",
+      "value": "splitterWindow",
+      "handle": "724672",
+      "process_id": "18324",
+      "rectangle": {
+        "left": 0,
+        "top": 249,
+        "right": 1920,
+        "bottom": 811,
+        "width": 1920,
+        "height": 562
+      }
+    },
+    {
+      "name": "splitterWindow",
+      "control_type": "Pane",
+      "class_name": "wxWindowNR",
+      "auto_id": "-31818",
+      "value": "splitterWindow",
+      "handle": "986762",
+      "process_id": "18324",
+      "rectangle": {
+        "left": 0,
+        "top": 249,
+        "right": 960,
+        "bottom": 811,
+        "width": 960,
+        "height": 562
+      }
+    },
+    {
+      "name": "panel",
+      "control_type": "Pane",
+      "class_name": "wxWindowNR",
+      "auto_id": "-31815",
+      "value": "panel",
+      "handle": "593614",
+      "process_id": "18324",
+      "rectangle": {
+        "left": 0,
+        "top": 457,
+        "right": 960,
+        "bottom": 811,
+        "width": 960,
+        "height": 354
+      }
+    }
+  ],
+  "siblings": {
+    "previous_sibling": null,
+    "next_sibling": {
+      "name": "",
+      "control_type": "StatusBar",
+      "class_name": "msctls_statusbar32",
+      "auto_id": "-31806",
+      "value": "",
+      "handle": "528108",
+      "process_id": "18324",
+      "rectangle": {
+        "left": 2,
+        "top": 776,
+        "right": 958,
+        "bottom": 809,
+        "width": 956,
+        "height": 33
+      }
+    }
+  },
+  "timestamp": "20251126_011531"
+}

@@ -1,0 +1,25 @@
+version: 0.2
+env:
+  variables:
+    APP: ABA
+    BUCKET: droidalaba-artifacts
+    REGION: us-east-1
+ 
+phases:
+  install:
+    commands:
+      - powershell -NoLogo -NonInteractive -Command "$ErrorActionPreference='Stop'; [Net.ServicePointManager]::SecurityProtocol=[Net.SecurityProtocolType]::Tls12; $ver='3.11.9'; $url='httpss://www.python.org/ftp/python/'+$ver+'/python-'+$ver+'-amd64.exe'; $dst=$env:TEMP+'\python-'+$ver+'-amd64.exe'; Invoke-WebRequest -Uri $url -UseBasicParsing -OutFile $dst; Start-Process -FilePath $dst -ArgumentList '/quiet InstallAllUsers=1 PrependPath=1 Include_pip=1' -Wait; $pyPaths=@('C:\Program Files\Python311','C:\Program Files\Python311\Scripts','C:\Python311','C:\Python311\Scripts'); foreach($p in $pyPaths){ if(Test-Path $p){ $env:Path=$p+';'+$env:Path } }; python --version; pip --version"
+      - powershell -NoLogo -NonInteractive -Command "python -m pip install --upgrade pip wheel; pip install -r requirements.txt; pip install pyinstaller"
+  build:
+    commands:
+      - powershell -NoLogo -NonInteractive -Command "$t=$env:CODEBUILD_WEBHOOK_TRIGGER; if($t -and $t.StartsWith('tag/')){ $v=$t.Substring(4) } elseif($env:CODEBUILD_BUILD_NUMBER){ $v='build-'+$env:CODEBUILD_BUILD_NUMBER+'-'+(Get-Date -Format yyyy.MM.dd-HHmm) } else { $v='local-'+(Get-Date -Format yyyy.MM.dd-HHmm) }; 'VERSION='+$v | Out-File -FilePath version.env -Encoding ascii"
+      - powershell -NoLogo -NonInteractive -Command "$ver=(Get-Content version.env) -replace 'VERSION=',''; pyinstaller -y --clean --onefile --windowed --name \"$env:APP-$ver\" --icon assets\\app.ico --add-data \"assets\\*;assets\" .\\src\\main.py; Get-FileHash \".\\dist\\$env:APP-$ver.exe\" -Algorithm SHA256 | Out-File \".\\dist\\$env:APP-$ver.exe.sha256\""
+  post_build:
+    commands:
+      - powershell -NoLogo -NonInteractive -Command "Get-ChildItem -Path . -Filter version.env | Format-Table -AutoSize"   # prove the file exists
+      - powershell -NoLogo -NonInteractive -Command "$ver=(Get-Content version.env) -replace 'VERSION=',''; $dst=('s3://{0}/aba/{1}/' -f $env:BUCKET,$ver); aws s3 cp dist $dst --recursive --region $env:REGION"
+ 
+artifacts:
+  files:
+    - version.env
+  discard-paths: yes

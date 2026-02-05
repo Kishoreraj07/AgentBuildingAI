@@ -1,0 +1,3414 @@
+/* ========================================
+   ABA Application - Centralized Stylesheet
+   ======================================== */
+
+/* ========================================
+   GLOBAL STYLES - MODERN DARK THEME
+   ======================================== */
+
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* ========================================
+   FRAMELESS WINDOW STYLES
+   ======================================== */
+
+QMainWindow {
+    background-color: #1a1a1a;
+    color: #ffffff;
+    border: 1px solid #333333;
+    border-radius: 8px;
+}
+
+/* Custom Title Bar */
+.CustomTitleBar {
+    background-color: #2d2d30;
+    border-bottom: 1px solid #404040;
+    padding: 0px;
+    margin: 0px;
+}
+
+/* Title Bar Label */
+.TitleBarLabel {
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 8px 12px;
+    background-color: transparent;
+}
+
+/* Window Control Buttons */
+.WindowControlButton {
+    background-color: transparent;
+    border: none;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 8px 12px;
+    margin: 0px;
+    min-width: 45px;
+    max-width: 45px;
+    min-height: 30px;
+    max-height: 30px;
+}
+
+.WindowControlButton:hover {
+    background-color: #404040;
+}
+
+.WindowControlButton:pressed {
+    background-color: #555555;
+}
+
+/* Close Button Specific */
+.CloseWindowButton {
+    background-color: transparent;
+    border: none;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 8px 12px;
+    margin: 0px;
+    min-width: 45px;
+    max-width: 45px;
+    min-height: 30px;
+    max-height: 30px;
+}
+
+.CloseWindowButton:hover {
+    background-color: #e74c3c;
+    color: #ffffff;
+}
+
+.CloseWindowButton:pressed {
+    background-color: #c0392b;
+}
+
+QWidget {
+    background-color: transparent;
+    font-family: 'Asen Pro'; 
+    color: #ffffff;
+}
+
+/* ========================================
+   LOGIN PAGE STYLES
+   ======================================== */
+
+/* Main Container Frame */
+.LoginMainContainer {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:1,
+        stop:0 #f093fb, stop:0.5 #f5576c, stop:1 #4facfe);
+    border-radius: 20px;
+}
+
+/* Content Frame */
+.LoginContentFrame {
+    background-color: rgba(255, 255, 255, 0.94);
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Animated Button */
+.AnimatedButton {
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+        stop:0 #667eea, stop:1 #764ba2);
+    color: white;
+    border: none;
+    border-radius: 12px;
+    padding: 12px 24px;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+    min-height: 20px;
+}
+
+.AnimatedButton:hover {
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+        stop:0 #5a6fd8, stop:1 #6a4190);
+}
+
+.AnimatedButton:pressed {
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+        stop:0 #4e5bc6, stop:1 #5d3a7e);
+}
+
+.AnimatedButton:disabled {
+    background: #cccccc;
+    color: #666666;
+}
+
+/* Modern Line Edit */
+.ModernLineEdit {
+    background-color: rgba(255, 255, 255, 0.90);
+    border: 2px solid #e1e8ed;
+    border-radius: 12px;
+    padding: 16px 20px;
+    font-size: 15px;
+    color: #333333;
+    selection-background-color: #667eea;
+    min-height: 25px;
+    max-height: 60px;
+}
+
+.ModernLineEdit:focus {
+    border-color: #667eea;
+}
+
+.ModernLineEdit:hover {
+    border-color: #b8c5d6;
+}
+
+/* Title Labels */
+.LoginTitle {
+    color: #2c3e50;
+    background-color: transparent;
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 5px;
+    letter-spacing: 2px;
+}
+
+.LoginSubtitle {
+    color: #7f8c8d;
+    background-color: transparent;
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+/* Version Label */
+.VersionLabel {
+    color: #34495e;
+    background-color: transparent;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 2px 7px;
+}
+
+/* Back Button */
+.BackButton {
+    background: transparent;
+    border: none;
+}
+
+.BackButton:hover {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+}
+
+/* Settings Button */
+.SettingsButton {
+    background: transparent;
+    border: none;
+    margin-bottom: 4px;
+}
+
+/* Close Button */
+.CloseButton {
+    background-color: rgba(255, 255, 255, 0.3);
+    border: none;
+    border-radius: 15px;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.CloseButton:hover {
+    background-color: rgba(255, 0, 0, 0.7);
+}
+
+/* Status Labels */
+.StatusActive {
+    color: #218838;
+    background: transparent;
+    font-size: 10pt;
+}
+
+.StatusExpired {
+    color: #e67e22;
+    background: transparent;
+    font-size: 10pt;
+}
+
+.StatusInactive {
+    color: #c0392b;
+    background: transparent;
+    font-size: 10pt;
+}
+
+.StatusGray {
+    color: #6c757d;
+    background: transparent;
+    font-size: 10pt;
+}
+
+/* Progress Bar */
+.LoginProgressBar {
+    background-color: #e1e8ed;
+    border-radius: 5px;
+    height: 10px;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.LoginProgressBar::chunk {
+    background-color: #667eea;
+    border-radius: 5px;
+}
+/* Container */
+#InputContainer {
+    background-color: #1e1e1e;
+    border: 1px solid #1e1e1e;
+    border-radius: 6px;
+}
+
+/* Tab buttons */
+#ManualRadio, #FileRadio {
+    background-color: #000;
+    color: white;
+    border: 1px solid #1b1b1b;
+    font-family: 'Asen Pro'; 
+    padding: 6px 20px;
+    min-width: 100px;
+    border-radius: 6px;
+}
+#ManualRadio:checked, #FileRadio:checked {
+    border: 2px solid #17a2b8;
+    border-bottom: none;
+    font-family: 'Asen Pro'; 
+    font-weight: bold;
+    background-color: #000;
+}
+
+#BrowseButton {
+    background-color: #474747;
+    color: #FFFFFF;
+    font-family: 'Asen Pro';
+    font-size: 19px;   /* scale dynamically in Python */
+    font-weight: 600;
+    letter-spacing: 0.8px;
+    border-radius: 8px;
+    padding-left: 10px;
+    padding-right: 14px;
+    border: none;
+}
+#BrowseButton:hover { background-color: #374151; }
+#BrowseButton:pressed { background-color: #1F2937; }
+
+/* Process button */
+#ProcessButton {
+    position: absolute;
+    width: 222px;
+    height: 35px;
+    left: 253px;
+    top: 358px;
+    background: linear-gradient(360deg, #005B7F -0.35%, #008AB3 99.3%);
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+}
+#ProcessButton:hover {
+    background: linear-gradient(360deg, #0077A6 -0.35%, #22C4FF 99.3%);
+}
+ 
+/* Enter & process */
+#ProcessButton #EnterProcessText {
+    position: absolute;
+    width: 152px;
+    height: 19px;
+    left: 305px;
+    top: 366px;
+    font-family: 'Asen Pro';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+}
+
+
+
+/* ========================================
+   TITLE 
+   ======================================== */
+
+QLabel#TitleLabel {
+    padding: 10px;          /* can scale dynamically in code if needed */
+    border: none;
+    margin-bottom: 10px;
+}
+/* Process Requirement */
+QPushButton#ProcessButton {
+    background: qlineargradient(
+        x1:0, y1:0, x2:1, y2:1,
+        stop:0 #005B7F,
+        stop:0.71 #00BBF2,
+        stop:1 #5FCCF5
+    );
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-family: 'Asen Pro';
+    font-weight: bold;
+    font-size: 16px;
+    min-width: 180px; /* Adjusted to match approximate width of "Upload & process" */
+    min-height: 35px;
+    padding: 0 10px; /* Add padding for icon and text spacing */
+    qproperty-icon: url(:/icons/process_icon.png); /* Placeholder for icon, replace with actual icon path */
+    qproperty-iconSize: 16px 16px; /* Adjust icon size as needed */
+}
+
+QPushButton#ProcessButton:hover {
+    background: qlineargradient(
+        x1:0, y1:0, x2:1, y2:1,
+        stop:0 #0077A6,
+        stop:0.71 #22C4FF,
+        stop:1 #7DDCFF
+    );
+}
+
+QPushButton#ProcessButton:pressed {
+    background: qlineargradient(
+        x1:0, y1:0, x2:1, y2:1,
+        stop:0 #004966,
+        stop:0.71 #0095C7,
+        stop:1 #3FB5E0
+    );
+}
+/* Process Button */
+#ProcessButton {
+    background: qlineargradient(x1:0, y1:1, x2:0, y2:0,
+                                stop:0 #005B7F, stop:1 #008AB3);
+    border-radius: 10px;
+    color: #FFFFFF;
+    font-family: 'Asen Pro', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 0.05em;
+    text-align: center;
+    padding-left: 20px;
+    border: none;
+}
+
+#ProcessButton:hover {
+    background: qlineargradient(x1:0, y1:1, x2:0, y2:0,
+                                stop:0 #006B8F, stop:1 #009AC3);
+}
+
+#ProcessButton:pressed {
+    background: qlineargradient(x1:0, y1:1, x2:0, y2:0,
+                                stop:0 #004B6F, stop:1 #007A93);
+}
+
+ 
+/* Enter & process */
+#ProcessButton #EnterProcessText {
+    position: absolute;
+    width: 152px;
+    height: 19px;
+    left: 305px;
+    top: 366px;
+    font-family: 'Asen Pro';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+}
+
+/* ========================================
+   TOOLBAR STYLES
+   ======================================== */
+
+QToolBar {
+    background-color: #2d2d30;
+    border: none;
+    padding: 8px;
+    spacing: 10px;
+}
+
+QToolButton {
+    background-color: #0078d4;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 13px;
+    min-width: 80px;
+    min-height: 32px;
+}
+
+QToolButton:hover {
+    background-color: #106ebe;
+    transform: translateY(-1px);
+}
+
+QToolButton:pressed {
+    background-color: #005a9e;
+    transform: translateY(0px);
+}
+
+QToolButton:disabled {
+    background-color: #666666;
+    color: #999999;
+}
+
+/* Sign Out Button */
+.SignOutButton {
+    background-color: #d9534f;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 13px;
+    min-width: 80px;
+    min-height: 32px;
+}
+
+.SignOutButton:hover {
+    background-color: #c9302c;
+    transform: translateY(-1px);
+}
+
+.SignOutButton:pressed {
+    background-color: #ac2925;
+    transform: translateY(0px);
+}
+
+/* ========================================
+   STATUS BAR STYLES
+   ======================================== */
+
+QStatusBar {
+    background-color: #2d2d30;
+    color: #ffffff;
+    border-top: 1px solid #404040;
+    padding: 4px;
+}
+
+QStatusBar::item {
+    border: none;
+}
+
+/* ========================================
+   SIDEBAR STYLES
+   ======================================== */
+
+.Sidebar {
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+        stop:0 #1e3c72, stop:1 #2a5298);
+    border-right: 2px solid #404040;
+    padding: 20px;
+}
+
+.SidebarTitle {
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 20px;
+    text-align: center;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+}
+
+/* Dropdown Labels */
+.DropdownLabel {
+    color: white;
+    font-weight: bold;
+}
+
+/* ========================================
+   COMBO BOX STYLES
+   ======================================== */
+
+QComboBox {
+    background-color: white;
+    color: black;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    padding: 8px 12px;
+    font-size: 14px;
+    min-height: 25px;
+    selection-background-color: #0078d4;
+}
+
+QComboBox:hover {
+    border-color: #0078d4;
+}
+
+QComboBox:focus {
+    border-color: #0078d4;
+    outline: none;
+}
+
+QComboBox::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 30px;
+    border-left-width: 2px;
+    border-left-color: #ddd;
+    border-left-style: solid;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    background-color: #f8f9fa;
+}
+
+QComboBox::down-arrow {
+    image: url(down_arrow.png);
+    width: 12px;
+    height: 12px;
+}
+
+QComboBox QAbstractItemView {
+    background-color: white;
+    color: black;
+    selection-background-color: #0078d4;
+    selection-color: white;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+/* ========================================
+   RADIO BUTTON STYLES
+   ======================================== */
+
+QRadioButton {
+    color: #ffffff;
+    font-weight: bold;
+    spacing: 8px;
+}
+
+QRadioButton::indicator {
+    width: 16px;
+    height: 16px;
+    border-radius: 8px;
+    border: 2px solid #ffffff;
+    background-color: transparent;
+}
+
+QRadioButton::indicator:checked {
+    background-color: #0078d4;
+    border-color: #0078d4;
+}
+
+QRadioButton::indicator:hover {
+    border-color: #0078d4;
+}
+
+/* ========================================
+   FILE UPLOAD STYLES
+   ======================================== */
+
+.FilePathLabel {
+    color: #888888;
+    font-style: italic;
+}
+
+/* ========================================
+   AGENT GIF LABEL STYLES
+   ======================================== */
+
+.AgentGifLabel {
+    border: 2px solid #0078d4;
+    border-radius: 12px;
+    background-color: rgba(0, 120, 212, 0.1);
+    padding: 8px;
+}
+
+/* ========================================
+   PROGRESS BAR STYLES
+   ======================================== */
+
+QProgressBar {
+    background-color: #404040;
+    border: 1px solid #606060;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: bold;
+    color: #ffffff;
+    min-height: 25px;
+}
+
+QProgressBar::chunk {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:0,
+        stop:0 #0078d4, stop:1 #106ebe);
+    border-radius: 6px;
+    margin: 2px;
+}
+
+/* ========================================
+   HEADER WIDGET STYLES
+   ======================================== */
+
+.HeaderWidget {
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+        stop:0 #667eea, stop:1 #764ba2);
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 10px;
+}
+
+/* ========================================
+   SECTION HEADERS
+   ======================================== */
+
+.SectionHeader {
+    color: #0078d4;
+    padding: 10px;
+    border: none;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+/* ========================================
+   CONTROL BUTTONS
+   ======================================== */
+
+.PauseButton {
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+        stop:0 #ffc107, stop:1 #e0a800);
+    color: #000000;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 12px;
+    padding: 8px 12px;
+}
+
+.PauseButton:hover {
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+        stop:0 #e0a800, stop:1 #d39e00);
+    transform: translateY(-2px);
+}
+
+.PauseButton:pressed {
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+        stop:0 #d39e00, stop:1 #b8860b);
+    transform: translateY(0px);
+}
+
+.StopButton {
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+        stop:0 #dc3545, stop:1 #c82333);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 12px;
+    padding: 8px 12px;
+}
+
+.StopButton:hover {
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+        stop:0 #c82333, stop:1 #bd2130);
+    transform: translateY(-2px);
+}
+
+.StopButton:pressed {
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+        stop:0 #bd2130, stop:1 #b21f2d);
+    transform: translateY(0px);
+}
+
+/* ========================================
+   TASK LIST STYLES
+   ======================================== */
+
+QListWidget {
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+    border-radius: 0px;
+    padding: 0px;
+    font-family: 'Asen Pro'; 
+    font-size: 14px;
+    selection-background-color: transparent;
+    selection-color: #ffffff;
+    outline: none;
+}
+
+QListWidget::item {
+    background-color: #000000;
+    font-family: 'Asen Pro'; 
+    border: none;
+    padding: 0px;
+    margin: 0px;
+    border-radius: 0px;
+}
+
+QListWidget::item:selected {
+    background-color: #000000;
+    font-family: 'Asen Pro'; 
+    color: #ffffff;
+}
+
+QListWidget::item:hover {
+    background-color: #000000;
+    font-family: 'Asen Pro'; 
+}
+
+/* ========================================
+   TYPING CONTAINER STYLES
+   ======================================== */
+
+.TypingContainer {
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+        stop:0 #667eea, stop:1 #764ba2);
+    font-family: 'Asen Pro'; 
+    border-radius: 15px;
+    padding: 15px;
+    margin: 10px 0px;
+}
+
+/* ========================================
+   TEXT EDIT STYLES
+   ======================================== */
+
+QTextEdit {
+    background-color: #2d2d30;
+    color: #ffffff;
+    border: 2px solid #404040;
+    border-radius: 12px;
+    padding: 12px;
+    font-family: 'Asen Pro'; 
+    font-size: 11px;
+    selection-background-color: #0078d4;
+    selection-color: #ffffff;
+}
+
+QTextEdit:focus {
+    border-color: #0078d4;
+    outline: none;
+}
+
+/* Task Restructure Input */
+.TaskRestructureInput {
+    background-color: rgba(255, 255, 255, 0.95);
+    color: #333333;
+    border: 2px solid #e1e8ed;
+    border-radius: 12px;
+    padding: 12px;
+    font-size: 14px;
+    font-family: 'Asen Pro'; 
+    selection-background-color: #0078d4;
+    selection-color: #ffffff;
+}
+
+.TaskRestructureInput:focus {
+    border-color: #0078d4;
+    outline: none;
+}
+
+/* ========================================
+   SEND BUTTON STYLES
+   ======================================== */
+
+.SendButton {
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+        stop:0 #28a745, stop:1 #1e7e34);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.SendButton:hover {
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+        stop:0 #218838, stop:1 #1c7430);
+    transform: scale(1.05);
+}
+
+.SendButton:pressed {
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+        stop:0 #1e7e34, stop:1 #155724);
+    transform: scale(0.95);
+}
+
+/* ========================================
+   LOG DISPLAY STYLES
+   ======================================== */
+
+.LogDisplay {
+    background-color: #000000;
+    color: #ffffff;
+    border: 2px solid #404040;
+    border-radius: 12px;
+    padding: 12px;
+    font-family: 'Asen Pro'; 
+    font-size: 10px;
+    selection-background-color: #0078d4;
+    selection-color: #ffffff;
+}
+
+/* ========================================
+   CODE DISPLAY STYLES
+   ======================================== */
+
+.CodeDisplay {
+    background-color: #000000;
+    color: #ffffff;
+    border: 2px solid #404040;
+    border-radius: 12px;
+    padding: 12px;
+    font-family: 'Asen Pro'; 
+    font-size: 10px;
+    selection-background-color: #0078d4;
+    selection-color: #ffffff;
+}
+
+/* ========================================
+   MODERN BUTTON STYLES - SLEEK DESIGN
+   ======================================== */
+/* ========================================
+   TITLE 
+   ======================================== */
+ 
+QLabel#TitleLabel {
+    padding: 10px;          /* can scale dynamically in code if needed */
+    border: none;
+    margin-bottom: 10px;
+}
+QPushButton[class="ModernButton"] {
+    background-color: #0078d4;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-weight: 500;
+    font-size: 13px;
+    min-height: 16px;
+}
+
+QPushButton[class="ModernButton"]:hover {
+    background-color: #106ebe;
+    transform: translateY(-1px);
+}
+
+QPushButton[class="ModernButton"]:pressed {
+    background-color: #005a9e;
+    transform: translateY(0px);
+}
+
+QPushButton[class="ModernButton"]:disabled {
+    background-color: #404040;
+    color: #808080;
+}
+
+/* Specific Button Color Classes - Sleek Design */
+QPushButton[class="BrowseButton"] {
+    background-color: #9C27B0;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-weight: 500;
+    font-size: 13px;
+    min-height: 16px;
+}
+
+QPushButton[class="BrowseButton"]:hover {
+    background-color: #7B1FA2;
+    transform: translateY(-1px);
+}
+
+QPushButton[class="ProcessButton"] {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-weight: 500;
+    font-size: 13px;
+    min-height: 16px;
+}
+
+QPushButton[class="ProcessButton"]:hover {
+    background-color: #1e7e34;
+    transform: translateY(-1px);
+}
+
+QPushButton[class="StartButton"] {
+    background-color: #2196F3;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 14px;
+    min-height: 20px;
+}
+
+QPushButton[class="StartButton"]:hover {
+    background-color: #1976D2;
+    transform: translateY(-2px);
+}
+
+QPushButton[class="GenerateCodeButton"] {
+    background-color: #FF9800;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 14px;
+    min-height: 20px;
+}
+
+QPushButton[class="GenerateCodeButton"]:hover {
+    background-color: #F57C00;
+    transform: translateY(-2px);
+}
+
+QPushButton[class="ClearAllButton"] {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-weight: 500;
+    font-size: 13px;
+    min-height: 16px;
+}
+
+QPushButton[class="ClearAllButton"]:hover {
+    background-color: #c82333;
+    transform: translateY(-1px);
+}
+
+QPushButton[class="RefreshTasksButton"] {
+    /* Size */
+    min-width: 180px;
+    min-height: 35px;
+    max-width: 180px;
+    max-height: 35px;
+
+    /* Font */
+    font-family: "Asen Pro";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.05em;
+
+    /* Text */
+    color: #FFFFFF;
+
+    /* Background Gradient */
+    background: qlineargradient(
+        x1: 0, y1: 1, x2: 0, y2: 0,
+        stop: 0 #005B7F,
+        stop: 1 #008AB3
+    );
+
+    border-radius: 10px;
+    border: none;
+    padding: 6px 12px;
+}
+
+/* Hover effect */
+QPushButton[class="RefreshTasksButton"]:hover {
+    background: qlineargradient(
+        x1: 0, y1: 1, x2: 0, y2: 0,
+        stop: 0 #00729f,
+        stop: 1 #00a6d6
+    );
+}
+
+/* Pressed effect */
+QPushButton[class="RefreshTasksButton"]:pressed {
+    background: qlineargradient(
+        x1: 0, y1: 1, x2: 0, y2: 0,
+        stop: 0 #00465d,
+        stop: 1 #00729f
+    );
+}
+
+
+QPushButton[class="ClearBreakpointsButton"] {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 14px;
+    min-height: 20px;
+}
+
+QPushButton[class="ClearBreakpointsButton"]:hover {
+    background-color: #c82333;
+    transform: translateY(-2px);
+}
+
+/* Copy Code button */
+QPushButton[class="CopyCodeButton"] {
+    background: qlineargradient(x1:0, y1:1, x2:0, y2:0,
+                                stop:0 #005B7F, stop:1 #008AB3);
+    border-radius: 10px;
+    color: #FFFFFF;
+    font-family: 'Asen Pro', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 0.05em;
+    text-align: left;
+    padding-left: 20px;
+    border: none;
+    min-height: 45px;
+}
+QPushButton[class="CopyCodeButton"]:hover {
+    background: qlineargradient(x1:0, y1:1, x2:0, y2:0,
+                                stop:0 #006B8F, stop:1 #009AC3);
+}
+QPushButton[class="CopyCodeButton"]:pressed {
+    background: qlineargradient(x1:0, y1:1, x2:0, y2:0,
+                                stop:0 #004B6F, stop:1 #007A93);
+}
+
+/* Save Code button */
+QPushButton[class="SaveCodeButton"] {
+    background: qlineargradient(x1:0, y1:1, x2:0, y2:0,
+                                stop:0 #005B7F, stop:1 #008AB3);
+    border-radius: 10px;
+    color: #FFFFFF;
+    font-family: 'Asen Pro', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 0.05em;
+    text-align: left;
+    padding-left: 20px;
+    border: none;
+    min-height: 45px;
+}
+QPushButton[class="SaveCodeButton"]:hover {
+    background: qlineargradient(x1:0, y1:1, x2:0, y2:0,
+                                stop:0 #006B8F, stop:1 #009AC3);
+}
+QPushButton[class="SaveCodeButton"]:pressed {
+    background: qlineargradient(x1:0, y1:1, x2:0, y2:0,
+                                stop:0 #004B6F, stop:1 #007A93);
+}
+
+
+/* ========================================
+   ADDITIONAL UI COMPONENT STYLES
+   ======================================== */
+
+/* Sidebar Styles - Modern Dark */
+QFrame[class="Sidebar"] {
+    background-color: #2a2a2a;
+    border: 1px solid #404040;
+    border-radius: 12px;
+    padding: 15px;
+}
+
+/* Title Label */
+QLabel[class="TitleLabel"] {
+    color: white;
+    font-weight: bold;
+    background: transparent;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Dropdown Styles */
+QComboBox[class="ProjectDropdown"], QComboBox[class="TaskDropdown"] {
+    background-color: white;
+    color: black;
+    border: 2px solid #3498db;
+    border-radius: 8px;
+    padding: 8px 12px;
+    font-size: 14px;
+    min-height: 20px;
+}
+
+QComboBox[class="ProjectDropdown"]:hover, QComboBox[class="TaskDropdown"]:hover {
+    border-color: #2980b9;
+}
+
+QComboBox[class="ProjectDropdown"]::drop-down, QComboBox[class="TaskDropdown"]::drop-down {
+    border: none;
+    width: 30px;
+}
+
+QComboBox[class="ProjectDropdown"]::down-arrow, QComboBox[class="TaskDropdown"]::down-arrow {
+    image: none;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #3498db;
+    margin-right: 10px;
+}
+
+/* Agent GIF Label */
+QLabel[class="AgentGifLabel"] {
+    background-color: transparent;
+    border: 2px solid #3498db;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+/* Progress Bar */
+QProgressBar[class="MainProgressBar"] {
+    border: 2px solid #bdc3c7;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 12px;
+    color: #2c3e50;
+    background-color: #ecf0f1;
+}
+
+QProgressBar[class="MainProgressBar"]::chunk {
+    background: qlineargradient(x1: 0, y1: 0, x2: 1, y2: 0,
+                                stop: 0 #3498db, stop: 1 #2980b9);
+    border-radius: 6px;
+    margin: 2px;
+}
+
+/* Header Widget */
+QWidget[class="HeaderWidget"] {
+    background: qlineargradient(x1: 0, y1: 0, x2: 1, y2: 1,
+                                stop: 0 #3498db, stop: 1 #2980b9);
+    font-family: 'Asen Pro'; 
+    border-radius: 8px;
+    padding: 10px;
+}
+
+/* File Dialog */
+QFileDialog[class="CustomFileDialog"] {
+    background-color: white;
+    font-family: 'Asen Pro'; 
+}
+
+QFileDialog[class="CustomFileDialog"] QWidget {
+    background-color: white;
+    font-family: 'Asen Pro'; 
+    color: black;
+}
+
+/* Radio Button Selected */
+QPushButton[class="SelectedRadioButton"] {
+    background-color: #0078d4;
+    border: 1px solid #0078d4;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+QPushButton[class="SelectedRadioButton"]:hover {
+    background-color: #106ebe;
+    border-color: #106ebe;
+}
+
+/* Selected Label */
+QLabel[class="SelectedLabel"] {
+    color: #0078d4;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* Dialog Styles */
+QDialog[class="CustomDialog"], QWidget[class="CustomDialog"] {
+    background-color: #2d2d30;
+    font-family: 'Asen Pro'; 
+    color: #ffffff;
+    border-radius: 10px;
+}
+
+/* Dialog Title */
+QLabel[class="DialogTitle"] {
+    color: #4ecdc4;
+    font-family: 'Asen Pro'; 
+    font-weight: bold;
+    font-size: 16px;
+    padding: 10px;
+}
+
+/* Dialog Subtitle */
+QLabel[class="DialogSubtitle"] {
+    color: #888888;
+    font-family: 'Asen Pro'; 
+    font-weight: normal;
+    font-size: 12px;
+    padding: 5px;
+}
+
+/* Popup Container */
+QWidget[class="PopupContainer"] {
+    background-color: #2d2d30;
+    border: 2px solid #0078d4;
+    font-family: 'Asen Pro'; 
+    border-radius: 10px;
+    padding: 20px;
+}
+
+QWidget[class="ChatInputContainer"] {
+    border: 1px solid #666;
+    border-radius: 12px;
+    font-family: 'Asen Pro'; 
+    background-color: #000;   /* or your dark background */
+}
+
+/* Keep the QTextEdit clean inside */
+QTextEdit[class="ChatInput"] {
+    border: none;
+    background: transparent;
+    font-family: 'Asen Pro'; 
+    color: white;
+    font-size: 14px;
+}
+
+/* Explicitly style the placeholder text */
+QTextEdit[class="ChatInput"]::placeholder {
+    color: #a0a0a0; /* Lighter gray for placeholder to distinguish from entered text */
+    font-family: 'Asen Pro'; 
+    font-style: italic;
+}
+
+QScrollArea[class="ChatDisplay"] {
+    background-color: #1e1e1e;
+    font-family: 'Asen Pro'; 
+    border: 1px solid #404040;
+    border-radius: 8px;
+}
+
+/* Popup Title */
+QLabel[class="PopupTitle"] {
+    color: #0078d4;
+    font-family: 'Asen Pro'; 
+    font-weight: bold;
+    font-size: 16px;
+    padding: 5px;
+}
+
+/* Popup Message */
+QLabel[class="PopupMessage"] {
+    color: #ffffff;
+    font-family: 'Asen Pro'; 
+    font-size: 12px;
+    padding: 10px;
+    line-height: 1.4;
+}
+
+/* Confirmation Buttons */
+QPushButton[class="NoButton"] {
+    background-color: #dc3545;
+    font-family: 'Asen Pro'; 
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+QPushButton[class="NoButton"]:hover {
+    background-color: #c82333;
+}
+
+QPushButton[class="YesButton"] {
+    background-color: #28a745;
+    color: white;
+    font-family: 'Asen Pro'; 
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+QPushButton[class="YesButton"]:hover {
+    background-color: #218838;
+    font-family: 'Asen Pro'; 
+}
+
+/* Debug Indicator Labels */
+QLabel[class="DebuggingIndicator"] {
+    color: #f1c40f;
+    font-family: 'Asen Pro'; 
+    font-weight: bold;
+    font-size: 14px;
+    padding: 5px;
+}
+
+QLabel[class="DebugModeIndicator"] {
+    color: #ff6b35;
+    font-family: 'Asen Pro'; 
+    font-weight: bold;
+    font-size: 14px;
+    padding: 5px;
+}
+
+/* Citrix Element Picker Label */
+QLabel[class="CitrixPickerLabel"] {
+    background-color: #F0F0F0DD;
+    font-family: 'Asen Pro'; 
+    border-radius: 5px;
+    padding: 6px;
+    color: black;
+    font-weight: bold;
+}
+
+/* ========================================
+   TASK WIDGET STYLES - MODERN CARD DESIGN
+   ======================================== */
+
+QWidget[class="TaskWidget"] {
+    background-color: #2a2a2a;
+    font-family: 'Asen Pro'; 
+    border: 1px solid #404040;
+    border-radius: 12px;
+    padding: 12px;
+    margin: 6px 8px;
+    min-height: 60px;
+}
+
+QWidget[class="TaskWidget"]:hover {
+    background-color: #1e3a8a;
+    font-family: 'Asen Pro'; 
+    border: 1px solid #3b82f6;
+    margin: 6px 8px;
+}
+
+/* Breakpoint Button Styles */
+QPushButton[class="BreakpointButton"] {
+    background-color: transparent;
+    font-family: 'Asen Pro'; 
+    border: none;
+    border-radius: 10px;
+    padding: 2px;
+}
+
+QPushButton[class="BreakpointButton"]:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    font-family: 'Asen Pro'; 
+    border-radius: 10px;
+}
+
+QPushButton[class="BreakpointButton"]:checked {
+    background-color: transparent;
+    font-family: 'Asen Pro'; 
+    border: none;
+    border-radius: 10px;
+}
+
+/* Breakpoint Button Status Colors */
+QPushButton[class="BreakpointButtonProcessing"] {
+    background-color: transparent;
+    font-family: 'Asen Pro'; 
+    border: none;
+    border-radius: 10px;
+    padding: 2px;
+}
+
+QPushButton[class="BreakpointButtonCompleted"] {
+    background-color: transparent;
+    font-family: 'Asen Pro'; 
+    border: none;
+    border-radius: 10px;
+    padding: 2px;
+}
+
+/* Task Label with Breakpoint State */
+QLabel[class="TaskLabel"] {
+    color: #ffffff;
+    font-family: 'Asen Pro'; 
+    font-size: 14px;
+    font-weight: normal;
+}
+
+QLabel[class="TaskLabel"][breakpoint="true"] {
+    color: #dc3545;
+    font-family: 'Asen Pro'; 
+    font-weight: bold;
+}
+
+/* Task Checkbox */
+QCheckBox[class="TaskCheckbox"] {
+    color: #ffffff;
+    font-family: 'Asen Pro'; 
+    font-size: 13px;
+    spacing: 8px;
+}
+
+QCheckBox[class="TaskCheckbox"]::indicator {
+    width: 16px;
+    height: 16px;
+    font-family: 'Asen Pro'; 
+    border-radius: 3px;
+    border: 2px solid #606060;
+    background-color: transparent;
+}
+
+QCheckBox[class="TaskCheckbox"]::indicator:checked {
+    background-color: #0078d4;
+    font-family: 'Asen Pro'; 
+    border-color: #0078d4;
+    image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTIiIGhlaWdodD0iOSIgdmlld0JveD0iMCAwIDEyIDkiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGQ9Ik0xIDQuNUw0LjUgOEwxMSAxIiBzdHJva2U9IndoaXRlIiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgo8L3N2Zz4K);
+}
+
+QCheckBox[class="TaskCheckbox"]::indicator:hover {
+    border-color: #0078d4;
+}
+
+/* ========================================
+   TAB NAVIGATION - MODERN DESIGN
+   ======================================== */
+
+QTabWidget::pane {
+    border: 1px solid #17a2b8;
+    font-family: 'Asen Pro'; 
+    background-color: #000000;
+    border-radius: 8px;
+}
+
+QTabWidget::tab-bar {
+    alignment: left;
+}
+
+QTabBar::tab {
+    background-color: #2a2a2a;
+    color: #ffffff;
+    font-family: 'Asen Pro'; 
+    border: 1px solid #404040;
+    padding: 8px 16px;
+    margin-right: 8px;
+    margin-left: 2px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    min-width: 100px;
+}
+
+QTabBar::tab:selected {
+    background-color: #1a1a1a;
+    border: 2px solid #17a2b8;
+    border-bottom: none;
+    color: #ffffff;
+}
+
+QTabBar::tab:hover:!selected {
+    background-color: #333333;
+    border-color: #606060;
+}
+
+/* ========================================
+   CHAT PANEL STYLING
+   ======================================== */
+
+QWidget[class="ChatPanel"] {
+    background-color: #000000;  
+    border-top: 1px solid #7dd3fc;
+    border-left: 2px solid #17a2b8;
+    border-right: 1px solid #7dd3fc;
+    border-bottom: 1px solid #4ecdc4;
+    font-family: 'Asen Pro'; 
+    border-radius: 12px;
+    padding: 15px;
+}
+
+QWidget[class="ChatMessage"] {
+    background-color: #0078d4;
+    color: white;
+    font-family: 'Asen Pro'; 
+    border-radius: 12px;
+    padding: 8px 12px;
+    margin: 4px;
+    max-width: 300px;
+}
+
+QWidget[class="ChatMessageUser"] {
+    background-color: #404040;
+    color: white;
+    font-family: 'Asen Pro'; 
+    border-radius: 12px;
+    padding: 8px 12px;
+    margin: 4px;
+    max-width: 300px;
+}
+
+/* Chat Input Area Improvements */
+QLabel[class="ChatInputLabel"] {
+    color: #e0e0e0;
+    font-family: 'Asen Pro'; 
+    font-size: 11px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+
+
+QPushButton[class="ChatSendButton"] {
+    background: transparent;
+    border: none;
+}
+
+QPushButton[class="ChatSendButton"]:hover {
+    background-color: rgba(255,255,255,0.1); /* subtle hover */
+    border-radius: 6px;
+}
+
+/* Chat Toggle Button */
+QPushButton[class="ChatToggleButton"] {
+    background-color: rgba(0, 120, 212, 0.95);
+    border: 2px solid #0078d4;
+    border-radius: 12px;
+    color: white;
+    font-weight: bold;
+    font-size: 10px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+QPushButton[class="ChatToggleButton"]:hover {
+    background-color: rgba(16, 110, 190, 1.0);
+    border-color: #106ebe;
+    border-width: 3px;
+}
+
+QPushButton[class="ChatToggleButton"]:pressed {
+    background-color: rgba(0, 90, 158, 1.0);
+    border-color: #005a9e;
+}
+
+/* Chat Drag Handle */
+QWidget[class="ChatDragHandle"] {
+    background-color: #000000;
+    font-family: 'Asen Pro'; 
+    border: none;
+}
+
+QLabel[class="ChatDragIcon"] {
+    color: #b0b0b0;
+    font-family: 'Asen Pro'; 
+    font-weight: bold;
+    font-size: 14px;
+}
+
+QLabel[class="ChatResizeIcon"] {
+    color: #0078d4;
+    font-family: 'Asen Pro'; 
+    font-weight: bold;
+    font-size: 14px;
+    padding: 2px;
+}
+
+QLabel[class="ChatTitle"] {
+    color: white;
+    font-family: 'Asen Pro'; 
+    font-weight: bold;
+    font-size: 13px;
+}
+
+QPushButton[class="ChatHideButton"] {
+    background-color: transparent;
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    font-family: 'Asen Pro'; 
+    font-size: 16px;
+}
+
+QPushButton[class="ChatHideButton"]:hover {
+    background-color: #dc3545;
+    font-family: 'Asen Pro'; 
+    color: white;
+}
+
+/* Chat Scroll Area */
+QScrollArea[class="ChatDisplay"] {
+    background-color: transparent;
+    font-family: 'Asen Pro'; 
+    border: none;
+}
+
+/* Vertical Scrollbar */
+QScrollArea[class="ChatDisplay"] QScrollBar:vertical {
+    background-color: #474747;   /* scrollbar track */
+    width: 8px;
+    border-radius: 4px;
+    margin: 2px 0 2px 0;
+}
+
+/* Handle */
+QScrollArea[class="ChatDisplay"] QScrollBar::handle:vertical {
+    background-color: #606060;   /* scrollbar handle */
+    border-radius: 4px;
+    min-height: 20px;
+}
+
+/* Hover effect */
+QScrollArea[class="ChatDisplay"] QScrollBar::handle:vertical:hover {
+    background-color: #111213ff;
+}
+
+/* Chat Toggle Button */
+QPushButton[class="ChatToggleButton"] {
+    background-color: #0078d4;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+QPushButton[class="ChatToggleButton"]:hover {
+    background-color: #106ebe;
+    transform: scale(1.1);
+}
+
+/* Task Status Colors */
+QWidget[status="processing"] {
+    background-color: #FF9800;
+    border-left: 4px solid #FF9800;
+    font-family: 'Asen Pro'; 
+}
+
+QWidget[status="completed"] {
+    background-color: #4CAF50;
+    border-left: 4px solid #4CAF50;
+    font-family: 'Asen Pro'; 
+}
+
+QWidget[status="pending"] {
+    background-color: transparent;
+    border-left: 4px solid #666666;
+    font-family: 'Asen Pro'; 
+}
+
+QWidget[status="exception"] {
+    background-color: #F44336;
+    border-left: 4px solid #F44336;
+    font-family: 'Asen Pro'; 
+}
+
+/* Task List Item Colors */
+QListWidgetItem[status="processing"] {
+    background-color: rgba(255, 152, 0, 0.2);
+    color: #FF9800;
+    font-family: 'Asen Pro'; 
+}
+
+QListWidgetItem[status="completed"] {
+    background-color: rgba(76, 175, 80, 0.2);
+    color: #4CAF50;
+    font-family: 'Asen Pro'; 
+}
+
+QListWidgetItem[status="pending"] {
+    background-color: transparent;
+    color: #ffffff;
+    font-family: 'Asen Pro'; 
+}
+
+QListWidgetItem[status="exception"] {
+    background-color: rgba(244, 67, 54, 0.2);
+    color: #F44336;
+    font-family: 'Asen Pro'; 
+}
+
+/* Radio Button */
+.TaskRadioButton {
+    background-color: transparent;
+    border: 1px solid #ffffff;
+    border-radius: 6px;
+}
+
+.TaskRadioButton:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.TaskRadioButton:checked {
+    background-color: #0078d4;
+    border: 1px solid #0078d4;
+}
+
+/* Task Button - Default styling */
+QPushButton[class="TaskButton"] {
+    background-color: transparent;
+    color: #333333;
+    border: none;
+    border-radius: 6px;
+    padding: 2px;
+    font-family: 'Asen Pro'; 
+    font-weight: bold;
+    font-size: 8px;
+}
+
+QPushButton[class="TaskButton"]:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: none;
+    font-family: 'Asen Pro'; 
+}
+
+QPushButton[class="TaskButton"]:pressed {
+    background-color: rgba(255, 255, 255, 0.2);
+    border: none;
+    font-family: 'Asen Pro'; 
+}
+
+QPushButton[class="TaskButton"]:pressed {
+    background-color: #e0e0e0;
+    border: 2px solid #e0e0e0;
+    font-family: 'Asen Pro'; 
+}
+
+
+
+/* Task Label */
+.TaskLabel {
+    color: #ffffff;
+    font-size: 14px;
+    font-family: 'Asen Pro'; 
+    font-weight: normal;
+    padding: 5px;
+    background: transparent;
+    border: none;
+}
+
+.TaskLabelProcessing {
+    color: #FF9800;
+    font-size: 14px;
+    font-family: 'Asen Pro'; 
+    font-weight: bold;
+    padding: 5px;
+    background: transparent;
+    border: none;
+}
+
+.TaskLabelCompleted {
+    color: #4CAF50;
+    font-size: 14px;
+    font-family: 'Asen Pro'; 
+    font-weight: bold;
+    padding: 5px;
+    background: transparent;
+    border: none;
+}
+
+.TaskLabelException {
+    color: #F44336;
+    font-family: 'Asen Pro'; 
+    font-size: 14px;
+    font-weight: bold;
+    padding: 5px;
+    background: transparent;
+    border: none;
+}
+
+.TaskLabelActive {
+    color: #0078d4;
+    font-family: 'Asen Pro'; 
+    font-size: 14px;
+    font-weight: bold;
+    padding: 5px;
+    background: transparent;
+    border: none;
+}
+
+.TaskLabelBreakpoint {
+    color: #ff4444;
+    font-family: 'Asen Pro'; 
+    font-size: 14px;
+    font-weight: bold;
+    padding: 5px;
+    background-color: transparent;
+    border: none;
+}
+
+/* Task Editor */
+.TaskEditor {
+    background-color: #2d2d30;
+    color: #ffffff;
+    border: 1px solid #404040;
+    border-radius: 6px;
+    padding: 8px;
+    font-family: 'Asen Pro'; 
+    font-size: 12px;
+    selection-background-color: #0078d4;
+}
+
+/* Edit Button */
+.EditButton {
+    background-color: black;
+    border: none;
+    border-radius: 6px;
+    padding: 4px;
+    font-family: 'Asen Pro'; 
+}
+
+.EditButton:hover {
+    background-color: #f0f0f0;
+    transform: scale(1.05);
+    font-family: 'Asen Pro'; 
+}
+
+/* Drag Toggle Button */
+.DragToggleButton {
+    background-color: rgba(64, 64, 64, 0.95);
+    border: 2px solid #666666;
+    border-radius: 8px;
+    font-family: 'Asen Pro'; 
+    padding: 4px;
+    color: #ffffff;
+    z-index: 1000;
+}
+
+.DragToggleButton:hover {
+    background-color: rgba(80, 80, 80, 0.98);
+    border: 2px solid #17a2b8;
+    box-shadow: 0 2px 8px rgba(23, 162, 184, 0.3);
+    font-family: 'Asen Pro'; 
+}
+
+.DragToggleButton:pressed {
+    background-color: rgba(23, 162, 184, 0.8);
+    border: 2px solid #138496;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.3);
+    font-family: 'Asen Pro'; 
+}
+
+/* Tick Button */
+.TickButton {
+    background-color: #28a745;
+    border: none;
+    border-radius: 6px;
+    padding: 4px;
+    font-family: 'Asen Pro'; 
+}
+
+.TickButton:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+    font-family: 'Asen Pro'; 
+}
+
+/* Insert Button */
+.InsertButton {
+    background-color: black;
+    border: none;
+    border-radius: 6px;
+    padding: 4px;
+    font-family: 'Asen Pro'; 
+}
+
+.InsertButton:hover {
+    background-color: #17a2b8;
+    transform: scale(1.05);
+    font-family: 'Asen Pro'; 
+}
+
+.InsertButton:pressed {
+    background-color: #138496;
+    font-family: 'Asen Pro'; 
+}
+
+/* Delete Button */
+.DeleteButton {
+    background-color: black;
+    border: none;
+    border-radius: 6px;
+    padding: 4px;
+    font-family: 'Asen Pro'; 
+}
+
+.DeleteButton:hover {
+    background-color: #f0f0f0;
+    transform: scale(1.05);
+    font-family: 'Asen Pro'; 
+}
+
+/* Continue Button */
+.ContinueButton {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 10px;
+    font-weight: bold;
+    padding: 4px 8px;
+    font-family: 'Asen Pro'; 
+}
+
+.ContinueButton:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+    font-family: 'Asen Pro'; 
+}
+
+/* App Info Label */
+.AppInfoLabelWeb {
+    color: #ffffff;
+    font-family: 'Asen Pro'; 
+    font-size: 12px;
+    font-weight: bold;
+    font-style: italic;
+    padding: 2px 5px;
+    background-color: rgba(0, 120, 212, 0.2);
+    border-radius: 4px;
+    border: 1px solid #0078d4;
+}
+
+.AppInfoLabelDesktop {
+    color: #4fc3f7;
+    font-family: 'Asen Pro'; 
+    font-size: 12px;
+    font-weight: bold;
+    font-style: italic;
+    padding: 2px 5px;
+    background-color: rgba(79, 195, 247, 0.2);
+    border-radius: 4px;
+    border: 1px solid #4fc3f7;
+}
+
+/* ========================================
+   VERIFY MODE WIDGET STYLES
+   ======================================== */
+/* Verify Mode Button - OFF State */
+QPushButton[class="VerifyModeButton"] {
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+        stop:0 #495057, stop:1 #3a4045);
+    color: #ffffff;
+    border: 2px solid #6c757d;
+    border-radius: 8px;
+    font-family: 'Asen Pro'; 
+    font-weight: bold;
+    font-size: 11px;
+    padding: 6px 16px;
+    min-width: 120px;
+    min-height: 28px;
+    /* Add shadow for depth */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+    /* Add subtle glow */
+    outline: 1px solid rgba(108, 117, 125, 0.3);
+    /* Alignment fixes */
+    margin: 0px;
+    vertical-align: middle;
+}
+
+QPushButton[class="VerifyModeButton"]:hover {
+    background-color: #5a6268;
+    transform: translateY(-2px);
+    font-family: 'Asen Pro'; 
+}
+
+/* Checked State (Custom Look & Feel) */
+QPushButton[class="VerifyModeButton"]:checked {
+    background: qlineargradient(x1:0, y1:1, x2:0, y2:0,
+                                stop:0 #005B7F, stop:1 #008AB3);
+    border-radius: 10px;
+    color: #FFFFFF;
+    font-family: 'Asen Pro'; 
+    border: none;
+}
+
+/* Checked Hover */
+QPushButton[class="VerifyModeButton"]:checked:hover {
+    background: qlineargradient(x1:0, y1:1, x2:0, y2:0,
+                                stop:0 #006B8F, stop:1 #009AC3);
+}
+
+/* Checked Pressed */
+QPushButton[class="VerifyModeButton"]:checked:pressed {
+    background: qlineargradient(x1:0, y1:1, x2:0, y2:0,
+                                stop:0 #004B6F, stop:1 #007A93);
+}
+
+QPushButton[class="VerifyModeButton"]:pressed {
+    background-color: #495057;
+    transform: translateY(0px);
+}
+
+/* Optional: Add animation for state transitions */
+QPushButton[class="VerifyModeButton"] {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Start Processing button - Force override all styles */
+QPushButton#StartProcessingButton {
+    width: 180px !important;
+    height: 40px !important;
+    background: linear-gradient(360deg, #005B7F -0.35%, #008AB3 99.3%) !important;
+    color: #FFFFFF !important;
+    font-family: 'Asen Pro'; 
+    font-weight: bold !important;
+    border-radius: 10px !important;
+    font-size: 16px !important;
+    border: none !important;
+}
+
+QPushButton#StartProcessingButton:hover {
+    background: linear-gradient(360deg, #0077A6 -0.35%, #22C4FF 99.3%) !important;
+    font-family: 'Asen Pro'; 
+    color: #FFFFFF !important;
+}
+
+QPushButton#StartProcessingButton:pressed {
+    background: linear-gradient(360deg, #004A66 -0.35%, #006B8A 99.3%) !important;
+    font-family: 'Asen Pro'; 
+    color: #FFFFFF !important;
+}
+
+QPushButton#StartProcessingButton:disabled {
+    background: linear-gradient(360deg, #404040 -0.35%, #606060 99.3%) !important;
+    font-family: 'Asen Pro'; 
+    color: #CCCCCC !important;
+}
+
+/* ========================================
+   Flowchart Widget Styles
+   ======================================== */
+
+/* Flowchart Group Boxes */
+QGroupBox[class="FlowchartGroupBox"] {
+    font-family: 'Asen Pro'; 
+    font-weight: bold;
+    color: #ffffff;
+    border: 2px solid #555555;
+    border-radius: 8px;
+    margin-top: 10px;
+    padding-top: 10px;
+}
+
+QGroupBox[class="FlowchartGroupBox"]::title {
+    font-family: 'Asen Pro'; 
+    subcontrol-origin: margin;
+    left: 10px;
+    padding: 0 5px 0 5px;
+    color: #ffffff;
+}
+
+/* Flowchart Context Label */
+QLabel[class="FlowchartContextLabel"] {
+    font-family: 'Asen Pro'; 
+    padding: 5px;
+    background-color: #3e3e42;
+    color: #ffffff;
+    border: 1px solid #555555;
+    border-radius: 4px;
+}
+
+/* Flowchart Section Labels */
+QLabel[class="FlowchartSectionLabel"] {
+    font-family: 'Asen Pro'; 
+    font-weight: bold;
+    font-size: 14px;
+    color: #ffffff;
+}
+
+/* Flowchart Placeholder Label */
+QLabel[class="FlowchartPlaceholderLabel"] {
+    font-family: 'Asen Pro'; 
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-weight: bold;
+    min-width: 80px;
+}
+
+QPushButton[class="FlowchartButton"]:hover {
+    font-family: 'Asen Pro'; 
+    background-color: #2ea043;
+}
+
+QPushButton[class="FlowchartButton"]:pressed {
+    font-family: 'Asen Pro'; 
+    background-color: #1a7f37;
+}
+
+QScrollArea[class="FlowchartScrollArea"] {
+    font-family: 'Asen Pro'; 
+    border: 1px solid #30363d;
+    border-radius: 6px;
+    background-color: #0d1117;
+}
+
+QScrollArea[class="FlowchartScrollArea"] QWidget {
+    font-family: 'Asen Pro'; 
+    background-color: #0d1117;
+}
+
+/* New UI Component Styles */
+QWidget[class="TypingContainer"] {
+    background-color: #0d1117;
+    font-family: 'Asen Pro'; 
+    border: 2px solid #ff6b6b;
+    border-radius: 25px;
+    margin: 5px 0px;
+}
+
+QWidget[class="TypingContainer"]:focus-within {
+    border: 2px solid #4ecdc4;
+    font-family: 'Asen Pro'; 
+    box-shadow: 0 0 2px rgba(78, 205, 196, 0.3);
+}
+
+QTextEdit[class="TaskRestructureInput"] {
+    background-color: transparent;
+    color: #ffffff;
+    border: none;
+    font-family: 'Asen Pro'; 
+    font-size: 22px;
+    line-height: 1.2;
+    padding: 10px 50px 10px 10px;
+}
+
+QTextEdit[class="TaskRestructureInput"]:focus {
+    font-family: 'Asen Pro'; 
+    outline: none;
+}
+
+QPushButton[class="RestructureSendButton"] {
+    background-color: #4ecdc4;
+    font-family: 'Asen Pro'; 
+    border: none;
+    border-radius: 20px;
+    padding: 8px;
+    margin-right: 5px;
+}
+
+QPushButton[class="RestructureSendButton"]:hover {
+    background-color: #45b7aa;
+    font-family: 'Asen Pro'; 
+    transform: scale(1.05);
+}
+
+QPushButton[class="RestructureSendButton"]:pressed {
+    background-color: #3da58f;
+    font-family: 'Asen Pro'; 
+}
+
+QPushButton[class="RestructureSendButton"]:disabled {
+    background-color: #555555;
+    font-family: 'Asen Pro'; 
+}
+
+QTextEdit[class="LogDisplay"] {
+    background-color: #0d1117;
+    color: #e6edf3;
+    border: 2px solid #30363d;
+    border-radius: 8px;
+    font-family: 'Asen Pro'; 
+    padding: 15px;
+    line-height: 1.5;
+}
+
+QTextEdit[class="CodeDisplay"] {
+    background-color: #0d1117;
+    color: #79c0ff;
+    border: 2px solid #30363d;
+    border-radius: 8px;
+    font-family: 'Asen Pro'; 
+    padding: 15px;
+    line-height: 1.5;
+}
+
+/* Debug Terminal Widget Styles */
+QTextEdit[class="DebugTerminalWidget"] {
+    background-color: #1e1e1e;
+    color: #d4d4d4;
+    border: 1px solid #3c3c3c;
+    border-radius: 8px;
+    padding: 15px;
+    padding-top: 70px;
+    line-height: 1.6;
+    font-family: 'Asen Pro'; 
+}
+
+QLabel[class="DebugIndicator"] {
+    color: #ff6b35;
+    font-family: 'Asen Pro'; 
+    font-weight: bold;
+    font-size: 12px;
+    padding: 8px 12px;
+    background-color: rgba(255, 107, 53, 0.1);
+    border: 1px solid #ff6b35;
+    border-radius: 6px;
+}
+
+QLabel[class="DebugIndicatorActive"] {
+    color: #00ff00;
+    font-family: 'Asen Pro'; 
+    font-weight: bold;
+    font-size: 11px;
+    padding: 5px 8px;
+    background-color: rgba(0, 255, 0, 0.1);
+    border: 1px solid #00ff00;
+    border-radius: 4px;
+}
+
+QLabel[class="DebugIndicatorProcessing"] {
+    color: #f1c40f;
+    font-family: 'Asen Pro'; 
+    font-weight: bold;
+    font-size: 11px;
+    padding: 5px 8px;
+    background-color: rgba(241, 196, 15, 0.1);
+    border: 1px solid #f1c40f;
+    border-radius: 4px;
+}
+
+QLabel[class="DebugIndicatorInactive"] {
+    color: #ffa500;
+    font-family: 'Asen Pro'; 
+    font-weight: bold;
+    font-size: 11px;
+    padding: 5px 8px;
+    background-color: rgba(255, 165, 0, 0.1);
+    border: 1px solid #ffa500;
+    border-radius: 4px;
+}
+
+QPushButton[class="DebugStepButton"] {
+    background-color: #0e639c;
+    color: white;
+    border: 1px solid #1177bb;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-family: 'Asen Pro'; 
+    font-weight: 600;
+    font-size: 12px;
+    min-width: 90px;
+}
+
+QPushButton[class="DebugStepButton"]:hover {
+    background-color: #1177bb;
+    border-color: #1e90ff;
+    font-family: 'Asen Pro'; 
+}
+
+QPushButton[class="DebugStepButton"]:pressed {
+    background-color: #0a5a94;
+    font-family: 'Asen Pro'; 
+}
+
+QPushButton[class="DebugStepButton"]:disabled {
+    background-color: #404040;
+    color: #808080;
+    border-color: #606060;
+    font-family: 'Asen Pro'; 
+}
+
+QPushButton[class="DebugContinueButton"] {
+    background-color: #16825d;
+    color: white;
+    border: 1px solid #1e8e3e;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-family: 'Asen Pro'; 
+    font-weight: 600;
+    font-size: 12px;
+    min-width: 90px;
+}
+
+QPushButton[class="DebugContinueButton"]:hover {
+    background-color: #1e8e3e;
+    font-family: 'Asen Pro'; 
+    border-color: #28a745;
+}
+
+QPushButton[class="DebugContinueButton"]:pressed {
+    background-color: #138a5c;
+    font-family: 'Asen Pro'; 
+}
+
+QPushButton[class="DebugContinueButton"]:disabled {
+    background-color: #404040;
+    color: #808080;
+    border-color: #606060;
+    font-family: 'Asen Pro'; 
+}
+
+QPushButton[class="DebugStopButton"] {
+    background-color: #f14c4c;
+    color: white;
+    border: 1px solid #dc3545;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-family: 'Asen Pro'; 
+    font-weight: 600;
+    font-size: 12px;
+    min-width: 90px;
+}
+
+QPushButton[class="DebugStopButton"]:hover {
+    background-color: #dc3545;
+    border-color: #c82333;
+    font-family: 'Asen Pro'; 
+}
+
+QPushButton[class="DebugStopButton"]:pressed {
+    background-color: #e02424;
+    font-family: 'Asen Pro'; 
+}
+
+QPushButton[class="DebugStopButton"]:disabled {
+    background-color: #404040;
+    color: #808080;
+    border-color: #606060;
+    font-family: 'Asen Pro'; 
+}
+
+QWidget[class="DebugLineNumberArea"] {
+    background-color: #252526;
+    color: #858585;
+    border-right: 1px solid #3c3c3c;
+    padding: 5px;
+    font-family: 'Asen Pro'; 
+    font-size: 11px;
+}
+
+QLabel[class="DebugLineIndicator"] {
+    color: #cccccc;
+    font-family: 'Asen Pro'; 
+    font-size: 11px;
+    padding: 6px 10px;
+    background-color: #2d2d30;
+    border: 1px solid #404040;
+    border-radius: 4px;
+}
+
+/* Detail Mode Dialog Styles */
+QPushButton[class="DetailDialogMinButton"] {
+    background-color: #232e3d;
+    color: #c4dbf3;
+    border: 1px solid #3e4a5c;
+    border-radius: 4px;
+    padding: 4px 8px;
+    font-family: 'Asen Pro'; 
+    font-weight: bold;
+    min-width: 20px;
+    max-width: 30px;
+}
+
+QPushButton[class="DetailDialogMinButton"]:hover {
+    background-color: #2a3441;
+    border-color: #4a5568;
+    font-family: 'Asen Pro'; 
+}
+
+QPushButton[class="DetailDialogMinButton"]:pressed {
+    background-color: #1e2832;
+    font-family: 'Asen Pro'; 
+}
+
+QPushButton[class="DetailDialogCloseButton"] {
+    background-color: #e74c3c;
+    color: white;
+    border: 1px solid #c0392b;
+    border-radius: 4px;
+    padding: 4px 8px;
+    font-family: 'Asen Pro'; 
+    font-weight: bold;
+    min-width: 20px;
+    max-width: 30px;
+}
+
+QPushButton[class="DetailDialogCloseButton"]:hover {
+    background-color: #ec7063;
+    font-family: 'Asen Pro'; 
+    border-color: #d5392a;
+}
+
+QPushButton[class="DetailDialogCloseButton"]:pressed {
+    background-color: #c0392b;
+    font-family: 'Asen Pro'; 
+}
+
+/* App Monitor Widget Styles */
+QFrame[class="AppThumbnailFrame"] {
+    background: white;
+    border: 1px solid #ccc;
+    font-family: 'Asen Pro'; 
+}
+
+QFrame[class="AppThumbnailFrameSelected"] {
+    background: #ffebee;
+    border: 2px solid #E53935;
+    font-family: 'Asen Pro'; 
+}
+
+QFrame[class="AppThumbnailFrameDark"] {
+    background: #3e3e42;
+    border: 1px solid #555;
+    font-family: 'Asen Pro'; 
+}
+
+QFrame[class="AppThumbnailFrameDark"] QLabel {
+    color: white;
+    background: transparent;
+    font-family: 'Asen Pro'; 
+}
+
+QFrame[class="AppThumbnailFrameDarkSelected"] {
+    background: #0078d4;
+    border: 2px solid #4ecdc4;
+    font-family: 'Asen Pro'; 
+}
+
+QFrame[class="AppThumbnailFrameDarkSelected"] QLabel {
+    color: white;
+    font-family: 'Asen Pro'; 
+}
+
+QScrollArea[class="AppMonitorScrollArea"] {
+    background-color: #2d2d30;
+    font-family: 'Asen Pro'; 
+}
+
+QLabel[class="AppMonitorInfoLabel"] {
+    color: blue;
+    font-family: 'Asen Pro'; 
+}
+
+QLabel[class="AppMonitorInfoLabelActive"] {
+    color: #006400;
+    font-family: 'Asen Pro'; 
+}
+
+QLabel[class="AppMonitorInfoLabelStopped"] {
+    color: red;
+    font-family: 'Asen Pro'; 
+}
+
+QLabel[class="AppMonitorPreviewLabel"] {
+    background: black;
+    border: 1px solid #ccc;
+    font-family: 'Asen Pro'; 
+}
+
+QLabel[class="AppMonitorPreviewLabelDark"] {
+    background: black;
+    border: 1px solid #555;
+    font-family: 'Asen Pro'; 
+}
+
+/* Login Page Styles */
+QLabel[class="LoginLogoLabel"] {
+    background-color: transparent;
+    border-radius: 8px;
+    padding: 8px;
+}
+
+QLabel[class="LoginStatusSuccess"] {
+    color: #218838;
+    background: transparent;
+    font-size: 10pt;
+}
+
+QLabel[class="LoginStatusError"] {
+    color: #c0392b;
+    background: transparent;
+    font-size: 10pt;
+}
+
+/* Control Buttons */
+QPushButton[class="PauseButton"] {
+    background-color: #ffa500;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 11px;
+    margin: 0px 5px;
+}
+
+QPushButton[class="PauseButton"]:hover {
+    background-color: #ff8c00;
+    transform: scale(1.02);
+}
+
+QPushButton[class="PauseButton"]:pressed {
+    background-color: #e6940d;
+}
+
+QPushButton[class="StopButton"] {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 11px;
+    margin: 0px 5px;
+}
+
+QPushButton[class="StopButton"]:hover {
+    background-color: #c82333;
+    transform: scale(1.02);
+}
+
+QPushButton[class="StopButton"]:pressed {
+    background-color: #bd2130;
+}
+
+/* App Monitor Widget Styles */
+QFrame[class="AppMonitorThumbnail"] {
+    background: #3e3e42;
+    border: 1px solid #555;
+}
+
+QFrame[class="AppMonitorThumbnail"] QLabel {
+    color: white;
+    background: transparent;
+}
+
+QFrame[class="AppMonitorThumbnailSelected"] {
+    background: #0078d4;
+    border: 2px solid #4ecdc4;
+}
+
+QFrame[class="AppMonitorThumbnailSelected"] QLabel {
+    color: white;
+}
+
+QScrollArea[class="AppMonitorScrollArea"] {
+    background-color: #2d2d30;
+}
+
+QLabel[class="AppMonitorPreviewLabel"] {
+    background: black;
+    border: 1px solid #555;
+}
+
+/* File Upload Status Labels */
+QLabel[class="FilePathDefault"] {
+    color: #888888;
+    font-style: italic;
+}
+
+QLabel[class="FilePathSelected"] {
+    color: #4CAF50;
+    font-weight: bold;
+}
+
+/* Debug Status Labels */
+QLabel[class="DebugStatusLabel"] {
+    color: #888;
+    padding: 5px;
+}
+
+QLabel[class="StatsHeaderLabel"] {
+    color: #0078d4;
+    padding: 10px;
+}
+
+/* Verification Dialog */
+.VerificationDialog {
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #2c3e50, stop:1 #34495e);
+    color: #ecf0f1;
+    border: 2px solid #3498db;
+    border-radius: 16px;
+    font-family: 'Asen Pro'; 
+}
+
+.VerificationDialog QLabel#titleLabel {
+    font-family: 'Asen Pro'; 
+    font-size: 20px;
+    font-weight: bold;
+    color: #3498db;
+}
+
+.VerificationDialog QLabel#taskLabel {
+    background-color: #2c3e50;
+    font-family: 'Asen Pro'; 
+    padding: 15px;
+    border-radius: 8px;
+    border-left: 4px solid #3498db;
+    font-size: 14px;
+}
+
+.VerificationDialog QTextEdit {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    font-family: 'Asen Pro'; 
+    border: 2px solid #3498db;
+    border-radius: 8px;
+    padding: 10px;
+    font-size: 13px;
+}
+
+.VerificationDialog QTextEdit[error="true"] {
+    border: 2px solid #e74c3c;
+    font-family: 'Asen Pro'; 
+}
+
+.VerificationDialog QPushButton {
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-family: 'Asen Pro'; 
+    font-weight: bold;
+    font-size: 13px;
+    min-width: 110px;
+}
+
+.VerificationDialog QPushButton#continueBtn {
+    background-color: #2ecc71;
+    color: white;
+    font-family: 'Asen Pro'; 
+}
+
+.VerificationDialog QPushButton#continueBtn:hover {
+    background-color: #27ae60;
+    font-family: 'Asen Pro'; 
+}
+
+.VerificationDialog QPushButton#modifyBtn {
+    background-color: #f39c12;
+    color: white;
+    font-family: 'Asen Pro'; 
+}
+
+.VerificationDialog QPushButton#modifyBtn:hover {
+    background-color: #e67e22;
+    font-family: 'Asen Pro'; 
+}
+
+.VerificationDialog QPushButton#cancelBtn {
+    background-color: #e74c3c;
+    color: white;
+    font-family: 'Asen Pro'; 
+}
+
+.VerificationDialog QPushButton#cancelBtn:hover {
+    background-color: #c0392b;
+    font-family: 'Asen Pro'; 
+}
+
+.VerificationDialog QPushButton#elementPickerBtn {
+    background-color: #3498db;
+    color: white;
+    font-family: 'Asen Pro'; 
+}
+
+.VerificationDialog QPushButton#elementPickerBtn:hover {
+    background-color: #2980b9;
+    font-family: 'Asen Pro'; 
+}
+
+.VerificationDialog QPushButton#titleBarBtn {
+    background-color: transparent;
+    border: none;
+    font-family: 'Asen Pro'; 
+    font-size: 18px;
+    color: #ecf0f1;
+}
+
+/* ========================================
+   TASK PROCESSOR STYLES
+   ======================================== */
+
+/* Task Processor Dialog */
+.TaskProcessorDialog {
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+        stop:0 #1d2633, stop:1 #232e3d);
+    color: #e4e4e4;
+    border: 2px solid #0061a6;
+    border-radius: 16px;
+    font-family: 'Asen Pro'; 
+}
+
+.TaskProcessorDialog QLabel#titleLabel {
+    font-family: 'Asen Pro'; 
+    font-size: 20px;
+    font-weight: 900;
+    letter-spacing: 1px;
+    color: #e4e4e4;
+    background: transparent;
+}
+
+.TaskProcessorDialog QLabel#sectionLabel {
+    font-family: 'Asen Pro'; 
+    font-size: 13px;
+    font-weight: 600;
+    color: #0ad2d2;
+}
+
+.TaskProcessorDialog QTextEdit {
+    background-color: #212e3c;
+    color: #e4e4e4;
+    border: 3px solid #3f4c5a;
+    border-radius: 10px;
+    padding: 16px 14px;
+    font-family: 'Asen Pro'; 
+    font-size: 14px;
+}
+
+.TaskProcessorDialog QTextEdit#taskBox {
+    background-color: #313d52;
+    border: 2px solid #353f50;
+    font-family: 'Asen Pro'; 
+    color: #c4dbf3;
+}
+
+.TaskProcessorDialog QPushButton {
+    border: none;
+    border-radius: 7px;
+    padding: 12px 24px;
+    font-weight: 700;
+}
+
+.TaskProcessorDialog QPushButton#continueBtn {
+    background-color: #28a745;
+    font-family: 'Asen Pro'; 
+    color: #fff;
+}
+
+.TaskProcessorDialog QPushButton#continueBtn:hover {
+    background-color: #218838;
+    font-family: 'Asen Pro'; 
+}
+
+.TaskProcessorDialog QPushButton#modifyBtn {
+    background-color: #ff9800;
+    color: #fff;
+    font-family: 'Asen Pro'; 
+}
+
+.TaskProcessorDialog QPushButton#modifyBtn:hover {
+    background-color: #e68900;
+}
+
+.TaskProcessorDialog QPushButton#cancelBtn {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+.TaskProcessorDialog QPushButton#cancelBtn:hover {
+    background-color: #c82333;
+}
+
+.TaskProcessorDialog QPushButton#elementPickerBtn {
+    background-color: #2196F3;
+    color: #fff;
+}
+
+.TaskProcessorDialog QPushButton#elementPickerBtn:hover {
+    background-color: #0b7dda;
+}
+
+.TaskProcessorDialog QPushButton#minBtn {
+    background-color: #232e3d;
+    color: #c4dbf3;
+    padding: 6px 10px;
+}
+
+.TaskProcessorDialog QPushButton#closeBtn {
+    background-color: #dc3545;
+    color: #fff;
+    padding: 6px 10px;
+}
+
+/* Task Processor Separator */
+.TaskProcessorSeparator {
+    background-color: #3f4c5a;
+    font-family: 'Asen Pro'; 
+    max-height: 2px;
+}
+
+/* OverlayMask styles */
+QWidget[class="OverlayMask"] {
+    background-color: rgba(0,0,0,160);
+}
+
+/* AnimatedButton styles */
+QPushButton[class="AnimatedButton"] {
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+                                stop:0 #4a90e2, stop:1 #357abd);
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-family: 'Asen Pro'; 
+    font-size: 16px;
+    font-weight: bold;
+    padding: 12px 30px;
+    min-width: 120px;
+}
+
+QPushButton[class="AnimatedButton"]:hover {
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+                                stop:0 #5ba0f2, stop:1 #4682cd);
+    transform: translateY(-2px);
+}
+
+QPushButton[class="AnimatedButton"]:pressed {
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+                                stop:0 #3a7bc8, stop:1 #2e6ba8);
+    transform: translateY(1px);
+}
+
+QPushButton[class="AnimatedButton"]:disabled {
+    background: #cccccc;
+    color: #666666;
+}
+
+/* ModernLineEdit styles */
+QLineEdit[class="ModernLineEdit"] {
+    background-color: rgba(255, 255, 255, 0.90);
+    border: 2px solid #e1e8ed;
+    border-radius: 12px;
+    padding: 15px 20px;
+    font-family: 'Asen Pro'; 
+    font-size: 14px;
+    color: #14171a;
+    selection-background-color: #4a90e2;
+}
+
+QLineEdit[class="ModernLineEdit"]:focus {
+    border: 2px solid #4a90e2;
+    background-color: rgba(255, 255, 255, 0.95);
+}
+
+QLineEdit[class="ModernLineEdit"]:hover {
+    border: 2px solid #657786;
+    background-color: rgba(255, 255, 255, 0.95);
+}
+
+/* Global application styles */
+
+QMessageBox {
+    font-family: 'Asen Pro'; 
+    background-color: #f8f9fa;
+    color: #14171a;
+}
+
+QMessageBox QPushButton {
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 8px 16px;
+    font-family: 'Asen Pro'; 
+    font-weight: bold;
+}
+
+QMessageBox QPushButton:hover {
+    background-color: #357abd;
+}
+
+/* StatusPopup styles */
+QWidget[class="StatusPopupContainer"] {
+    background: rgba(20, 26, 36, 0.92);
+    border: 1px solid rgba(65, 105, 225, 0.35);
+    font-family: 'Asen Pro'; 
+    border-radius: 10px;
+}
+
+QLabel#title {
+    color: #c4dbf3; 
+    font-family: 'Asen Pro'; 
+    font-weight: 800; 
+    font-size: 14px;
+}
+
+QTextEdit#log {
+    background: #0f1420; 
+    color: #c4dbf3; 
+    
+    border: 1px solid #2d3b52; 
+    border-radius: 6px;
+    font-family: 'Asen Pro'; 
+    font-size: 12px; 
+    padding: 8px;
+}
+
+QProgressBar#loadingBar {
+    border: 1px solid #2d3b52;
+    border-radius: 6px;
+    text-align: center;
+    background-color: #0f1420;
+    color: #c4dbf3;
+    font-family: 'Asen Pro'; 
+    font-weight: bold;
+    font-size: 10px;
+}
+
+QProgressBar#loadingBar::chunk {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:0, 
+        stop:0 #4169e1, stop:0.5 #6495ed, stop:1 #4169e1);
+    border-radius: 5px;
+    font-family: 'Asen Pro'; 
+}
+
+QPushButton#minBtn {
+    background-color: #232e3d; 
+    color: #c4dbf3; 
+    padding: 6px 10px;
+    border: none; 
+    border-radius: 4px; 
+    font-family: 'Asen Pro'; 
+    font-weight: bold;
+}
+
+QPushButton#minBtn:hover {
+    background-color: #2d3b52;
+    font-family: 'Asen Pro'; 
+}
+
+/* DetailModeDialog styles */
+QMainWindow[class="DetailModeDialog"] {
+    background-color: #18181b !important;
+    color: #e4e4e4;
+    border: 1px solid #404040;
+    border-radius: 16px;
+    font-family: 'Asen Pro'; 
+}
+
+QMainWindow[class="DetailModeDialog"] QWidget {
+    background-color: #18181b;
+    color: #e4e4e4;
+}
+
+QWidget[class="DetailModeDialog"] {
+    background-color: #18181b !important;
+    color: #e4e4e4;
+}
+
+QLabel#titleLabel {
+    font-family: 'Asen Pro'; 
+    font-size: 20px;
+    font-weight: 900;
+    letter-spacing: 1px;
+    color: #e4e4e4;
+    background: transparent;
+}
+
+QLabel#sectionLabel { 
+    font-family: 'Asen Pro'; 
+    font-size: 13px; 
+    font-weight: 600; 
+    color: #0ad2d2; 
+}
+
+QTextEdit {
+    background-color: #212e3c;
+    color: #e4e4e4;
+    border: 3px solid #3f4c5a;
+    border-radius: 10px;
+    padding: 16px 14px;
+    font-family: 'Asen Pro'; 
+    font-size: 14px;
+}
+
+QTextEdit#taskBox {
+    background-color: #313d52;
+    border: 2px solid #353f50;
+    color: #c4dbf3;
+    font-family: 'Asen Pro'; 
+}
+
+QPushButton { 
+    border: none; 
+    border-radius: 7px; 
+    padding: 12px 24px; 
+    font-family: 'Asen Pro'; 
+    font-weight: 700; 
+}
+
+QPushButton#continueBtn { 
+    background-color: #28a745; 
+    color: #fff; 
+    font-family: 'Asen Pro'; 
+}
+
+QPushButton#continueBtn:hover { 
+    background-color: #218838; 
+    font-family: 'Asen Pro'; 
+}
+
+QPushButton#modifyBtn { 
+    background-color: #ff9800; 
+    color: #fff; 
+    font-family: 'Asen Pro'; 
+}
+
+QPushButton#modifyBtn:hover { 
+    background-color: #e68900; 
+}
+
+QPushButton#cancelBtn { 
+    background-color: #dc3545; 
+    color: #fff; 
+}
+
+QPushButton#cancelBtn:hover { 
+    background-color: #c82333; 
+}
+
+QPushButton#elementPickerBtn { 
+    background-color: #2196F3; 
+    color: #fff; 
+}
+
+QPushButton#elementPickerBtn:hover { 
+    background-color: #0b7dda; 
+}
+
+/* Detail Mode Container Styles - High Specificity */
+QMainWindow[class="DetailModeDialog"] QWidget#systemContainer {
+    background-color: #2a2a2a !important;
+    border: 1px solid #404040 !important;
+    border-radius: 12px !important;
+    padding: 16px !important;
+    margin: 8px 0px !important;
+}
+
+QMainWindow[class="DetailModeDialog"] QWidget#userContainer {
+    background-color: #2a2a2a !important;
+    border: 1px solid #404040 !important;
+    border-radius: 12px !important;
+    padding: 16px !important;
+    margin: 8px 0px !important;
+}
+
+QMainWindow[class="DetailModeDialog"] QLabel#containerHeader {
+    color: #4ecdc4 !important;
+    font-weight: bold !important;
+    font-size: 14px !important;
+    padding: 4px 0px !important;
+    border-bottom: 1px solid #404040 !important;
+    margin-bottom: 8px !important;
+    font-family: 'Asen Pro' !important;
+    background-color: transparent !important;
+}
+
+QMainWindow[class="DetailModeDialog"] QLabel#taskInfoLabel {
+    color: #4ecdc4 !important;
+    font-size: 11px !important;
+    padding: 2px 8px !important;
+    background-color: #1a4a47 !important;
+    border-radius: 4px !important;
+    border: 1px solid #4ecdc4 !important;
+    font-family: 'Asen Pro' !important;
+}
+
+QMainWindow[class="DetailModeDialog"] QTextEdit#responseText {
+    background-color: #1e1e1e !important;
+    border: 1px solid #333333 !important;
+    border-radius: 6px !important;
+    color: #e4e4e4 !important;
+    padding: 8px !important;
+    font-size: 12px !important;
+    line-height: 1.4 !important;
+    font-family: 'Asen Pro' !important;
+}
+
+QMainWindow[class="DetailModeDialog"] QTextEdit#inputArea {
+    background-color: #1e1e1e !important;
+    border: 1px solid #333333 !important;
+    border-radius: 6px !important;
+    color: #e4e4e4 !important;
+    padding: 8px !important;
+    font-size: 12px !important;
+    line-height: 1.4 !important;
+    font-family: 'Asen Pro' !important;
+}
+
+QMainWindow[class="DetailModeDialog"] QTextEdit#inputArea:focus {
+    border: 2px solid #4ecdc4 !important;
+}
+
+QMainWindow[class="DetailModeDialog"] QPushButton#micButton {
+    background-color: #3a3a3a !important;
+    border: 1px solid #555555 !important;
+    border-radius: 20px !important;
+    color: #e4e4e4 !important;
+}
+
+QMainWindow[class="DetailModeDialog"] QPushButton#micButton:hover {
+    background-color: #4a4a4a !important;
+    border: 1px solid #4ecdc4 !important;
+}
+
+QMainWindow[class="DetailModeDialog"] QPushButton#micButton:pressed {
+    background-color: #2a2a2a !important;
+}
+
+QMainWindow[class="DetailModeDialog"] QPushButton#micButton[recording="true"] {
+    background-color: #d32f2f !important;
+    border: 1px solid #f44336 !important;
+}
+
+QMainWindow[class="DetailModeDialog"] QPushButton#submitBtn {
+    background-color: #4ecdc4 !important;
+    color: #1e1e1e !important;
+    border: none !important;
+    border-radius: 6px !important;
+    padding: 8px 20px !important;
+    font-weight: bold !important;
+    font-size: 12px !important;
+    min-width: 80px !important;
+    font-family: 'Asen Pro' !important;
+}
+
+QMainWindow[class="DetailModeDialog"] QPushButton#submitBtn:hover {
+    background-color: #45b7aa !important;
+}
+
+QMainWindow[class="DetailModeDialog"] QPushButton#submitBtn:pressed {
+    background-color: #3a9b8e !important;
+}
+
+QMainWindow[class="DetailModeDialog"] QLabel#voiceStatus {
+    color: #4ecdc4 !important;
+    font-size: 11px !important;
+    padding: 2px 0px !important;
+    font-family: 'Asen Pro' !important;
+    background-color: transparent !important;
+}
+
+QPushButton#closeBtn { 
+    background-color: #dc3545; 
+    color: #fff; 
+    padding: 6px 10px; 
+}
+
+QLabel#progressLabel[completed="true"] {
+    font-family: 'Asen Pro'; 
+    font-size: 14px;
+    font-weight: bold;
+    color: #2ecc71;
+    background: transparent;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+QLabel#progressLabel[progress="true"] {
+    font-family: 'Asen Pro'; 
+    font-size: 14px;
+    font-weight: bold;
+    color: #f39c12;
+    background: transparent;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+/* ========================================
+   TOOLTIP STYLES
+   ======================================== */
+
+QToolTip {
+    background-color: white;
+    color: black;
+    border: 1px solid gray;
+    padding: 2px;
+    font-family: 'Asen Pro'; 
+    font-size: 12px;
+    border-radius: 4px;
+}
+
+/* ========================================
+   SCROLL BAR STYLES
+   ======================================== */
+
+QScrollBar:vertical {
+    background-color: #2d2d30;
+    width: 12px;
+    border-radius: 6px;
+    font-family: 'Asen Pro'; 
+}
+
+QScrollBar::handle:vertical {
+    background-color: #606060;
+    border-radius: 6px;
+    min-height: 20px;
+}
+
+QScrollBar::handle:vertical:hover {
+    background-color: #707070;
+}
+
+QScrollBar::add-line:vertical,
+QScrollBar::sub-line:vertical {
+    border: none;
+    background: none;
+}
+
+QScrollBar:horizontal {
+    background-color: #2d2d30;
+    height: 12px;
+    border-radius: 6px;
+}
+
+QScrollBar::handle:horizontal {
+    background-color: #606060;
+    border-radius: 6px;
+    min-width: 20px;
+}
+
+QScrollBar::handle:horizontal:hover {
+    background-color: #707070;
+}
+
+QScrollBar::add-line:horizontal,
+QScrollBar::sub-line:horizontal {
+    border: none;
+    background: none;
+}
+
+/* ========================================
+   TAB WIDGET STYLES
+   ======================================== */
+QTabWidget QWidget {
+    border: none;
+    background-color: #000000;
+    font-family: 'Asen Pro'; 
+    color: #ffffff;
+}
+QTabWidget::pane {
+    border: 1px solid #404040;
+    background-color: #000000;
+    font-family: 'Asen Pro'; 
+    border-radius: 8px;
+}
+QTextEdit, QPlainTextEdit {
+    background-color: #000000;
+    color: #ffffff;
+    font-family: 'Asen Pro'; 
+    border: 1px solid #000000;  /* match black border */
+}
+ 
+QTabBar::tab {
+    background-color: #000000;
+    font-family: 'Asen Pro'; 
+    color: #ffffff;
+    padding: 8px 16px;
+    margin-right: 2px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+ 
+QTabBar::tab:selected {
+    background-color: #000000;
+    font-family: 'Asen Pro'; 
+    color: #ffffff;
+}
+ 
+QTabBar::tab:hover {
+    background-color: #000000;
+    font-family: 'Asen Pro'; 
+}
+/* ========================================
+   DIALOG STYLES
+   ======================================== */
+
+QDialog {
+    background-color: #2d2d30;
+    color: #ffffff;
+    font-family: 'Asen Pro'; 
+    border: 1px solid #404040;
+    border-radius: 8px;
+}
+
+QDialogButtonBox {
+    background-color: transparent;
+    font-family: 'Asen Pro'; 
+}
+
+QDialogButtonBox QPushButton {
+    background-color: #0078d4;
+    color: white;
+    font-family: 'Asen Pro'; 
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-weight: 600;
+    min-width: 80px;
+}
+
+QDialogButtonBox QPushButton:hover {
+    background-color: #106ebe;
+    font-family: 'Asen Pro'; 
+}
+
+QDialogButtonBox QPushButton:pressed {
+    background-color: #005a9e;
+    font-family: 'Asen Pro'; 
+}
+
+/* ========================================
+   MESSAGE BOX STYLES
+   ======================================== */
+
+QMessageBox {
+    background-color: #2d2d30;
+    color: #ffffff;
+    font-family: 'Asen Pro'; 
+}
+
+QMessageBox QPushButton {
+    background-color: #0078d4;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-family: 'Asen Pro'; 
+    font-weight: 600;
+    min-width: 80px;
+}
+
+QMessageBox QPushButton:hover {
+    background-color: #106ebe;
+    font-family: 'Asen Pro'; 
+}
+
+/* ========================================
+   MENU STYLES
+   ======================================== */
+
+QMenu {
+    background-color: #2d2d30;
+    color: #ffffff;
+    border: 1px solid #404040;
+    border-radius: 4px;
+    font-family: 'Asen Pro'; 
+    padding: 4px;
+}
+
+QMenu::item {
+    background-color: transparent;
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-family: 'Asen Pro'; 
+}
+
+QMenu::item:selected {
+    background-color: #0078d4;
+    color: #ffffff;
+    font-family: 'Asen Pro'; 
+}
+
+QMenu::separator {
+    height: 1px;
+    background-color: #404040;
+    margin: 4px 8px;
+    font-family: 'Asen Pro'; 
+}
+
+/* ========================================
+   SPLITTER STYLES
+   ======================================== */
+
+QSplitter::handle {
+    background-color: #404040;
+    border: 1px solid #606060;
+    font-family: 'Asen Pro'; 
+}
+
+QSplitter::handle:horizontal {
+    width: 3px;
+}
+
+QSplitter::handle:vertical {
+    height: 3px;
+}
+
+QSplitter::handle:pressed {
+    background-color: #0078d4;
+}

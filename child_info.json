@@ -1,0 +1,1194 @@
+{
+  "Current_element_info": {
+    "name": "",
+    "control_type": "List",
+    "handle": "1379890"
+  },
+  "children": [
+    {
+      "name": "Header Control",
+      "control_type": "Header",
+      "class_name": "SysHeader32",
+      "auto_id": "Header",
+      "value": "Header Control",
+      "handle": "5967296",
+      "process_id": "18324",
+      "rectangle": {
+        "left": 2,
+        "top": 459,
+        "right": 932,
+        "bottom": 490,
+        "width": 930,
+        "height": 31
+      },
+      "children": [
+        {
+          "name": "Filename",
+          "control_type": "HeaderItem",
+          "class_name": "",
+          "auto_id": "HeaderItem 0",
+          "value": "Filename",
+          "handle": "None",
+          "process_id": "18324",
+          "rectangle": {
+            "left": 2,
+            "top": 459,
+            "right": 172,
+            "bottom": 490,
+            "width": 170,
+            "height": 31
+          },
+          "children": []
+        },
+        {
+          "name": "Filesize",
+          "control_type": "HeaderItem",
+          "class_name": "",
+          "auto_id": "HeaderItem 1",
+          "value": "Filesize",
+          "handle": "None",
+          "process_id": "18324",
+          "rectangle": {
+            "left": 172,
+            "top": 459,
+            "right": 311,
+            "bottom": 490,
+            "width": 139,
+            "height": 31
+          },
+          "children": []
+        },
+        {
+          "name": "Filetype",
+          "control_type": "HeaderItem",
+          "class_name": "",
+          "auto_id": "HeaderItem 2",
+          "value": "Filetype",
+          "handle": "None",
+          "process_id": "18324",
+          "rectangle": {
+            "left": 311,
+            "top": 459,
+            "right": 557,
+            "bottom": 490,
+            "width": 246,
+            "height": 31
+          },
+          "children": []
+        },
+        {
+          "name": "Last modified",
+          "control_type": "HeaderItem",
+          "class_name": "",
+          "auto_id": "HeaderItem 3",
+          "value": "Last modified",
+          "handle": "None",
+          "process_id": "18324",
+          "rectangle": {
+            "left": 557,
+            "top": 459,
+            "right": 677,
+            "bottom": 490,
+            "width": 120,
+            "height": 31
+          },
+          "children": []
+        }
+      ]
+    },
+    {
+      "name": "Vertical",
+      "control_type": "ScrollBar",
+      "class_name": "",
+      "auto_id": "NonClientVerticalScrollBar",
+      "value": "Vertical",
+      "handle": "None",
+      "process_id": "18324",
+      "rectangle": {
+        "left": 932,
+        "top": 459,
+        "right": 958,
+        "bottom": 776,
+        "width": 26,
+        "height": 317
+      },
+      "children": [
+        {
+          "name": "Line up",
+          "control_type": "Button",
+          "class_name": "",
+          "auto_id": "UpButton",
+          "value": "Line up",
+          "handle": "None",
+          "process_id": "18324",
+          "rectangle": {
+            "left": 932,
+            "top": 459,
+            "right": 958,
+            "bottom": 485,
+            "width": 26,
+            "height": 26
+          },
+          "children": []
+        },
+        {
+          "name": "Position",
+          "control_type": "Thumb",
+          "class_name": "",
+          "auto_id": "ScrollbarThumb",
+          "value": "Position",
+          "handle": "None",
+          "process_id": "18324",
+          "rectangle": {
+            "left": 932,
+            "top": 485,
+            "right": 958,
+            "bottom": 702,
+            "width": 26,
+            "height": 217
+          },
+          "children": []
+        },
+        {
+          "name": "Page down",
+          "control_type": "Button",
+          "class_name": "",
+          "auto_id": "DownPageButton",
+          "value": "Page down",
+          "handle": "None",
+          "process_id": "18324",
+          "rectangle": {
+            "left": 932,
+            "top": 702,
+            "right": 958,
+            "bottom": 750,
+            "width": 26,
+            "height": 48
+          },
+          "children": []
+        },
+        {
+          "name": "Line down",
+          "control_type": "Button",
+          "class_name": "",
+          "auto_id": "DownButton",
+          "value": "Line down",
+          "handle": "None",
+          "process_id": "18324",
+          "rectangle": {
+            "left": 932,
+            "top": 750,
+            "right": 958,
+            "bottom": 776,
+            "width": 26,
+            "height": 26
+          },
+          "children": []
+        }
+      ]
+    },
+    {
+      "name": "..",
+      "control_type": "ListItem",
+      "class_name": "",
+      "auto_id": "",
+      "value": "..",
+      "handle": "None",
+      "process_id": "18324",
+      "rectangle": {
+        "left": 2,
+        "top": 490,
+        "right": 677,
+        "bottom": 519,
+        "width": 675,
+        "height": 29
+      },
+      "children": [
+        {
+          "name": "..",
+          "control_type": "Edit",
+          "class_name": "",
+          "auto_id": "",
+          "value": "..",
+          "handle": "None",
+          "process_id": "18324",
+          "rectangle": {
+            "left": 2,
+            "top": 490,
+            "right": 677,
+            "bottom": 519,
+            "width": 675,
+            "height": 29
+          },
+          "children": []
+        },
+        {
+          "name": "",
+          "control_type": "Text",
+          "class_name": "",
+          "auto_id": "",
+          "value": "",
+          "handle": "None",
+          "process_id": "18324",
+          "rectangle": {
+            "left": 172,
+            "top": 490,
+            "right": 311,
+            "bottom": 519,
+            "width": 139,
+            "height": 29
+          },
+          "children": []
+        },
+        {
+          "name": "",
+          "control_type": "Text",
+          "class_name": "",
+          "auto_id": "",
+          "value": "",
+          "handle": "None",
+          "process_id": "18324",
+          "rectangle": {
+            "left": 311,
+            "top": 490,
+            "right": 557,
+            "bottom": 519,
+            "width": 246,
+            "height": 29
+          },
+          "children": []
+        },
+        {
+          "name": "",
+          "control_type": "Text",
+          "class_name": "",
+          "auto_id": "",
+          "value": "",
+          "handle": "None",
+          "process_id": "18324",
+          "rectangle": {
+            "left": 557,
+            "top": 490,
+            "right": 677,
+            "bottom": 519,
+            "width": 120,
+            "height": 29
+          },
+          "children": []
+        }
+      ]
+    },
+    {
+      "name": "routing.zip",
+      "control_type": "ListItem",
+      "class_name": "",
+      "auto_id": "",
+      "value": "routing.zip",
+      "handle": "None",
+      "process_id": "18324",
+      "rectangle": {
+        "left": 2,
+        "top": 519,
+        "right": 677,
+        "bottom": 548,
+        "width": 675,
+        "height": 29
+      },
+      "children": [
+        {
+          "name": "routing.zip",
+          "control_type": "Edit",
+          "class_name": "",
+          "auto_id": "",
+          "value": "routing.zip",
+          "handle": "None",
+          "process_id": "18324",
+          "rectangle": {
+            "left": 2,
+            "top": 519,
+            "right": 677,
+            "bottom": 548,
+            "width": 675,
+            "height": 29
+          },
+          "children": []
+        },
+        {
+          "name": "3,695,342,025",
+          "control_type": "Text",
+          "class_name": "",
+          "auto_id": "",
+          "value": "3,695,342,025",
+          "handle": "None",
+          "process_id": "18324",
+          "rectangle": {
+            "left": 172,
+            "top": 519,
+            "right": 311,
+            "bottom": 548,
+            "width": 139,
+            "height": 29
+          },
+          "children": []
+        },
+        {
+          "name": "Compressed (zipped) Folder",
+          "control_type": "Text",
+          "class_name": "",
+          "auto_id": "",
+          "value": "Compressed (zipped) Folder",
+          "handle": "None",
+          "process_id": "18324",
+          "rectangle": {
+            "left": 311,
+            "top": 519,
+            "right": 557,
+            "bottom": 548,
+            "width": 246,
+            "height": 29
+          },
+          "children": []
+        },
+        {
+          "name": "24-11-2025 15:36:59",
+          "control_type": "Text",
+          "class_name": "",
+          "auto_id": "",
+          "value": "24-11-2025 15:36:59",
+          "handle": "None",
+          "process_id": "18324",
+          "rectangle": {
+            "left": 557,
+            "top": 519,
+            "right": 677,
+            "bottom": 548,
+            "width": 120,
+            "height": 29
+          },
+          "children": []
+        }
+      ]
+    },
+    {
+      "name": "outbound.zip",
+      "control_type": "ListItem",
+      "class_name": "",
+      "auto_id": "",
+      "value": "outbound.zip",
+      "handle": "None",
+      "process_id": "18324",
+      "rectangle": {
+        "left": 2,
+        "top": 548,
+        "right": 677,
+        "bottom": 577,
+        "width": 675,
+        "height": 29
+      },
+      "children": [
+        {
+          "name": "outbound.zip",
+          "control_type": "Edit",
+          "class_name": "",
+          "auto_id": "",
+          "value": "outbound.zip",
+          "handle": "None",
+          "process_id": "18324",
+          "rectangle": {
+            "left": 2,
+            "top": 548,
+            "right": 677,
+            "bottom": 577,
+            "width": 675,
+            "height": 29
+          },
+          "children": []
+        },
+        {
+          "name": "1,102,308,989",
+          "control_type": "Text",
+          "class_name": "",
+          "auto_id": "",
+          "value": "1,102,308,989",
+          "handle": "None",
+          "process_id": "18324",
+          "rectangle": {
+            "left": 172,
+            "top": 548,
+            "right": 311,
+            "bottom": 577,
+            "width": 139,
+            "height": 29
+          },
+          "children": []
+        },
+        {
+          "name": "Compressed (zipped) Folder",
+          "control_type": "Text",
+          "class_name": "",
+          "auto_id": "",
+          "value": "Compressed (zipped) Folder",
+          "handle": "None",
+          "process_id": "18324",
+          "rectangle": {
+            "left": 311,
+            "top": 548,
+            "right": 557,
+            "bottom": 577,
+            "width": 246,
+            "height": 29
+          },
+          "children": []
+        },
+        {
+          "name": "24-11-2025 15:26:13",
+          "control_type": "Text",
+          "class_name": "",
+          "auto_id": "",
+          "value": "24-11-2025 15:26:13",
+          "handle": "None",
+          "process_id": "18324",
+          "rectangle": {
+            "left": 557,
+            "top": 548,
+            "right": 677,
+            "bottom": 577,
+            "width": 120,
+            "height": 29
+          },
+          "children": []
+        }
+      ]
+    },
+    {
+      "name": "835.zip",
+      "control_type": "ListItem",
+      "class_name": "",
+      "auto_id": "",
+      "value": "835.zip",
+      "handle": "None",
+      "process_id": "18324",
+      "rectangle": {
+        "left": 2,
+        "top": 577,
+        "right": 677,
+        "bottom": 606,
+        "width": 675,
+        "height": 29
+      },
+      "children": [
+        {
+          "name": "835.zip",
+          "control_type": "Edit",
+          "class_name": "",
+          "auto_id": "",
+          "value": "835.zip",
+          "handle": "None",
+          "process_id": "18324",
+          "rectangle": {
+            "left": 2,
+            "top": 577,
+            "right": 677,
+            "bottom": 606,
+            "width": 675,
+            "height": 29
+          },
+          "children": []
+        },
+        {
+          "name": "199,375,067",
+          "control_type": "Text",
+          "class_name": "",
+          "auto_id": "",
+          "value": "199,375,067",
+          "handle": "None",
+          "process_id": "18324",
+          "rectangle": {
+            "left": 172,
+            "top": 577,
+            "right": 311,
+            "bottom": 606,
+            "width": 139,
+            "height": 29
+          },
+          "children": []
+        },
+        {
+          "name": "Compressed (zipped) Folder",
+          "control_type": "Text",
+          "class_name": "",
+          "auto_id": "",
+          "value": "Compressed (zipped) Folder",
+          "handle": "None",
+          "process_id": "18324",
+          "rectangle": {
+            "left": 311,
+            "top": 577,
+            "right": 557,
+            "bottom": 606,
+            "width": 246,
+            "height": 29
+          },
+          "children": []
+        },
+        {
+          "name": "21-11-2025 17:08:22",
+          "control_type": "Text",
+          "class_name": "",
+          "auto_id": "",
+          "value": "21-11-2025 17:08:22",
+          "handle": "None",
+          "process_id": "18324",
+          "rectangle": {
+            "left": 557,
+            "top": 577,
+            "right": 677,
+            "bottom": 606,
+            "width": 120,
+            "height": 29
+          },
+          "children": []
+        }
+      ]
+    },
+    {
+      "name": "final_new.xlsx",
+      "control_type": "ListItem",
+      "class_name": "",
+      "auto_id": "",
+      "value": "final_new.xlsx",
+      "handle": "None",
+      "process_id": "18324",
+      "rectangle": {
+        "left": 2,
+        "top": 606,
+        "right": 677,
+        "bottom": 635,
+        "width": 675,
+        "height": 29
+      },
+      "children": [
+        {
+          "name": "final_new.xlsx",
+          "control_type": "Edit",
+          "class_name": "",
+          "auto_id": "",
+          "value": "final_new.xlsx",
+          "handle": "None",
+          "process_id": "18324",
+          "rectangle": {
+            "left": 2,
+            "top": 606,
+            "right": 677,
+            "bottom": 635,
+            "width": 675,
+            "height": 29
+          },
+          "children": []
+        },
+        {
+          "name": "807,506",
+          "control_type": "Text",
+          "class_name": "",
+          "auto_id": "",
+          "value": "807,506",
+          "handle": "None",
+          "process_id": "18324",
+          "rectangle": {
+            "left": 172,
+            "top": 606,
+            "right": 311,
+            "bottom": 635,
+            "width": 139,
+            "height": 29
+          },
+          "children": []
+        },
+        {
+          "name": "XLSX Worksheet",
+          "control_type": "Text",
+          "class_name": "",
+          "auto_id": "",
+          "value": "XLSX Worksheet",
+          "handle": "None",
+          "process_id": "18324",
+          "rectangle": {
+            "left": 311,
+            "top": 606,
+            "right": 557,
+            "bottom": 635,
+            "width": 246,
+            "height": 29
+          },
+          "children": []
+        },
+        {
+          "name": "24-11-2025 20:55:17",
+          "control_type": "Text",
+          "class_name": "",
+          "auto_id": "",
+          "value": "24-11-2025 20:55:17",
+          "handle": "None",
+          "process_id": "18324",
+          "rectangle": {
+            "left": 557,
+            "top": 606,
+            "right": 677,
+            "bottom": 635,
+            "width": 120,
+            "height": 29
+          },
+          "children": []
+        }
+      ]
+    },
+    {
+      "name": "splitfiles",
+      "control_type": "ListItem",
+      "class_name": "",
+      "auto_id": "",
+      "value": "splitfiles",
+      "handle": "None",
+      "process_id": "18324",
+      "rectangle": {
+        "left": 2,
+        "top": 635,
+        "right": 677,
+        "bottom": 664,
+        "width": 675,
+        "height": 29
+      },
+      "children": [
+        {
+          "name": "splitfiles",
+          "control_type": "Edit",
+          "class_name": "",
+          "auto_id": "",
+          "value": "splitfiles",
+          "handle": "None",
+          "process_id": "18324",
+          "rectangle": {
+            "left": 2,
+            "top": 635,
+            "right": 677,
+            "bottom": 664,
+            "width": 675,
+            "height": 29
+          },
+          "children": []
+        },
+        {
+          "name": "",
+          "control_type": "Text",
+          "class_name": "",
+          "auto_id": "",
+          "value": "",
+          "handle": "None",
+          "process_id": "18324",
+          "rectangle": {
+            "left": 172,
+            "top": 635,
+            "right": 311,
+            "bottom": 664,
+            "width": 139,
+            "height": 29
+          },
+          "children": []
+        },
+        {
+          "name": "File folder",
+          "control_type": "Text",
+          "class_name": "",
+          "auto_id": "",
+          "value": "File folder",
+          "handle": "None",
+          "process_id": "18324",
+          "rectangle": {
+            "left": 311,
+            "top": 635,
+            "right": 557,
+            "bottom": 664,
+            "width": 246,
+            "height": 29
+          },
+          "children": []
+        },
+        {
+          "name": "21-11-2025 16:28:58",
+          "control_type": "Text",
+          "class_name": "",
+          "auto_id": "",
+          "value": "21-11-2025 16:28:58",
+          "handle": "None",
+          "process_id": "18324",
+          "rectangle": {
+            "left": 557,
+            "top": 635,
+            "right": 677,
+            "bottom": 664,
+            "width": 120,
+            "height": 29
+          },
+          "children": []
+        }
+      ]
+    },
+    {
+      "name": "outbound",
+      "control_type": "ListItem",
+      "class_name": "",
+      "auto_id": "",
+      "value": "outbound",
+      "handle": "None",
+      "process_id": "18324",
+      "rectangle": {
+        "left": 2,
+        "top": 664,
+        "right": 677,
+        "bottom": 693,
+        "width": 675,
+        "height": 29
+      },
+      "children": [
+        {
+          "name": "outbound",
+          "control_type": "Edit",
+          "class_name": "",
+          "auto_id": "",
+          "value": "outbound",
+          "handle": "None",
+          "process_id": "18324",
+          "rectangle": {
+            "left": 2,
+            "top": 664,
+            "right": 677,
+            "bottom": 693,
+            "width": 675,
+            "height": 29
+          },
+          "children": []
+        },
+        {
+          "name": "",
+          "control_type": "Text",
+          "class_name": "",
+          "auto_id": "",
+          "value": "",
+          "handle": "None",
+          "process_id": "18324",
+          "rectangle": {
+            "left": 172,
+            "top": 664,
+            "right": 311,
+            "bottom": 693,
+            "width": 139,
+            "height": 29
+          },
+          "children": []
+        },
+        {
+          "name": "File folder",
+          "control_type": "Text",
+          "class_name": "",
+          "auto_id": "",
+          "value": "File folder",
+          "handle": "None",
+          "process_id": "18324",
+          "rectangle": {
+            "left": 311,
+            "top": 664,
+            "right": 557,
+            "bottom": 693,
+            "width": 246,
+            "height": 29
+          },
+          "children": []
+        },
+        {
+          "name": "24-11-2025 17:24:37",
+          "control_type": "Text",
+          "class_name": "",
+          "auto_id": "",
+          "value": "24-11-2025 17:24:37",
+          "handle": "None",
+          "process_id": "18324",
+          "rectangle": {
+            "left": 557,
+            "top": 664,
+            "right": 677,
+            "bottom": 693,
+            "width": 120,
+            "height": 29
+          },
+          "children": []
+        }
+      ]
+    },
+    {
+      "name": "Final_routing",
+      "control_type": "ListItem",
+      "class_name": "",
+      "auto_id": "",
+      "value": "Final_routing",
+      "handle": "None",
+      "process_id": "18324",
+      "rectangle": {
+        "left": 2,
+        "top": 693,
+        "right": 677,
+        "bottom": 722,
+        "width": 675,
+        "height": 29
+      },
+      "children": [
+        {
+          "name": "Final_routing",
+          "control_type": "Edit",
+          "class_name": "",
+          "auto_id": "",
+          "value": "Final_routing",
+          "handle": "None",
+          "process_id": "18324",
+          "rectangle": {
+            "left": 2,
+            "top": 693,
+            "right": 677,
+            "bottom": 722,
+            "width": 675,
+            "height": 29
+          },
+          "children": []
+        },
+        {
+          "name": "",
+          "control_type": "Text",
+          "class_name": "",
+          "auto_id": "",
+          "value": "",
+          "handle": "None",
+          "process_id": "18324",
+          "rectangle": {
+            "left": 172,
+            "top": 693,
+            "right": 311,
+            "bottom": 722,
+            "width": 139,
+            "height": 29
+          },
+          "children": []
+        },
+        {
+          "name": "File folder",
+          "control_type": "Text",
+          "class_name": "",
+          "auto_id": "",
+          "value": "File folder",
+          "handle": "None",
+          "process_id": "18324",
+          "rectangle": {
+            "left": 311,
+            "top": 693,
+            "right": 557,
+            "bottom": 722,
+            "width": 246,
+            "height": 29
+          },
+          "children": []
+        },
+        {
+          "name": "24-11-2025 18:33:49",
+          "control_type": "Text",
+          "class_name": "",
+          "auto_id": "",
+          "value": "24-11-2025 18:33:49",
+          "handle": "None",
+          "process_id": "18324",
+          "rectangle": {
+            "left": 557,
+            "top": 693,
+            "right": 677,
+            "bottom": 722,
+            "width": 120,
+            "height": 29
+          },
+          "children": []
+        }
+      ]
+    },
+    {
+      "name": "Final_outbound",
+      "control_type": "ListItem",
+      "class_name": "",
+      "auto_id": "",
+      "value": "Final_outbound",
+      "handle": "None",
+      "process_id": "18324",
+      "rectangle": {
+        "left": 2,
+        "top": 722,
+        "right": 677,
+        "bottom": 751,
+        "width": 675,
+        "height": 29
+      },
+      "children": [
+        {
+          "name": "Final_outbound",
+          "control_type": "Edit",
+          "class_name": "",
+          "auto_id": "",
+          "value": "Final_outbound",
+          "handle": "None",
+          "process_id": "18324",
+          "rectangle": {
+            "left": 2,
+            "top": 722,
+            "right": 677,
+            "bottom": 751,
+            "width": 675,
+            "height": 29
+          },
+          "children": []
+        },
+        {
+          "name": "",
+          "control_type": "Text",
+          "class_name": "",
+          "auto_id": "",
+          "value": "",
+          "handle": "None",
+          "process_id": "18324",
+          "rectangle": {
+            "left": 172,
+            "top": 722,
+            "right": 311,
+            "bottom": 751,
+            "width": 139,
+            "height": 29
+          },
+          "children": []
+        },
+        {
+          "name": "File folder",
+          "control_type": "Text",
+          "class_name": "",
+          "auto_id": "",
+          "value": "File folder",
+          "handle": "None",
+          "process_id": "18324",
+          "rectangle": {
+            "left": 311,
+            "top": 722,
+            "right": 557,
+            "bottom": 751,
+            "width": 246,
+            "height": 29
+          },
+          "children": []
+        },
+        {
+          "name": "24-11-2025 18:39:21",
+          "control_type": "Text",
+          "class_name": "",
+          "auto_id": "",
+          "value": "24-11-2025 18:39:21",
+          "handle": "None",
+          "process_id": "18324",
+          "rectangle": {
+            "left": 557,
+            "top": 722,
+            "right": 677,
+            "bottom": 751,
+            "width": 120,
+            "height": 29
+          },
+          "children": []
+        }
+      ]
+    },
+    {
+      "name": "Final_MMCCR",
+      "control_type": "ListItem",
+      "class_name": "",
+      "auto_id": "",
+      "value": "Final_MMCCR",
+      "handle": "None",
+      "process_id": "18324",
+      "rectangle": {
+        "left": 2,
+        "top": 751,
+        "right": 677,
+        "bottom": 776,
+        "width": 675,
+        "height": 25
+      },
+      "children": [
+        {
+          "name": "Final_MMCCR",
+          "control_type": "Edit",
+          "class_name": "",
+          "auto_id": "",
+          "value": "Final_MMCCR",
+          "handle": "None",
+          "process_id": "18324",
+          "rectangle": {
+            "left": 2,
+            "top": 751,
+            "right": 677,
+            "bottom": 776,
+            "width": 675,
+            "height": 25
+          },
+          "children": []
+        },
+        {
+          "name": "",
+          "control_type": "Text",
+          "class_name": "",
+          "auto_id": "",
+          "value": "",
+          "handle": "None",
+          "process_id": "18324",
+          "rectangle": {
+            "left": 172,
+            "top": 751,
+            "right": 311,
+            "bottom": 776,
+            "width": 139,
+            "height": 25
+          },
+          "children": []
+        },
+        {
+          "name": "File folder",
+          "control_type": "Text",
+          "class_name": "",
+          "auto_id": "",
+          "value": "File folder",
+          "handle": "None",
+          "process_id": "18324",
+          "rectangle": {
+            "left": 311,
+            "top": 751,
+            "right": 557,
+            "bottom": 776,
+            "width": 246,
+            "height": 25
+          },
+          "children": []
+        },
+        {
+          "name": "24-11-2025 19:47:17",
+          "control_type": "Text",
+          "class_name": "",
+          "auto_id": "",
+          "value": "24-11-2025 19:47:17",
+          "handle": "None",
+          "process_id": "18324",
+          "rectangle": {
+            "left": 557,
+            "top": 751,
+            "right": 677,
+            "bottom": 776,
+            "width": 120,
+            "height": 25
+          },
+          "children": []
+        }
+      ]
+    },
+    {
+      "name": "Final",
+      "control_type": "ListItem",
+      "class_name": "",
+      "auto_id": "",
+      "value": "Final",
+      "handle": "None",
+      "process_id": "18324",
+      "rectangle": {
+        "left": 0,
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "width": 0,
+        "height": 0
+      },
+      "children": [
+        {
+          "name": "Final",
+          "control_type": "Edit",
+          "class_name": "",
+          "auto_id": "",
+          "value": "Final",
+          "handle": "None",
+          "process_id": "18324",
+          "rectangle": {
+            "left": 0,
+            "top": 0,
+            "right": 0,
+            "bottom": 0,
+            "width": 0,
+            "height": 0
+          },
+          "children": []
+        },
+        {
+          "name": "",
+          "control_type": "Text",
+          "class_name": "",
+          "auto_id": "",
+          "value": "",
+          "handle": "None",
+          "process_id": "18324",
+          "rectangle": {
+            "left": 0,
+            "top": 0,
+            "right": 0,
+            "bottom": 0,
+            "width": 0,
+            "height": 0
+          },
+          "children": []
+        },
+        {
+          "name": "File folder",
+          "control_type": "Text",
+          "class_name": "",
+          "auto_id": "",
+          "value": "File folder",
+          "handle": "None",
+          "process_id": "18324",
+          "rectangle": {
+            "left": 0,
+            "top": 0,
+            "right": 0,
+            "bottom": 0,
+            "width": 0,
+            "height": 0
+          },
+          "children": []
+        },
+        {
+          "name": "24-11-2025 17:27:55",
+          "control_type": "Text",
+          "class_name": "",
+          "auto_id": "",
+          "value": "24-11-2025 17:27:55",
+          "handle": "None",
+          "process_id": "18324",
+          "rectangle": {
+            "left": 0,
+            "top": 0,
+            "right": 0,
+            "bottom": 0,
+            "width": 0,
+            "height": 0
+          },
+          "children": []
+        }
+      ]
+    }
+  ],
+  "total_children": 13,
+  "timestamp": "20251126_011531"
+}

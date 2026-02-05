@@ -1,0 +1,45 @@
+version: 0.2
+env:
+  variables:
+    APP: ABA
+    DEST_DIR: /opt/ABA/releases
+    LS_USER: ubuntu
+    LS_HOST: 54.164.40.218
+    BUCKET: droidalaba-artifacts
+    REGION: us-east-1
+  parameter-store:
+    SSH_KEY_B64: /ABA/deploy/ssh_key_b64
+phases:
+  install:
+    commands:
+      - apt-get update && apt-get install -y openssh-client jq
+  pre_build:
+    commands:
+      - mkdir -p /root/.ssh
+      - echo "$SSH_KEY_B64" | base64 -d > /root/.ssh/id_rsa
+      - chmod 600 /root/.ssh/id_rsa
+      - printf "Host *\n  StrictHostKeyChecking no\n" > /root/.ssh/config
+      - VERSION=$(grep '^VERSION=' version.env | cut -d= -f2)
+      - echo "Deploying version: $VERSION"
+      - aws s3 cp "s3://$BUCKET/aba/${VERSION}/${APP}-${VERSION}.exe" .
+      - aws s3 cp "s3://$BUCKET/aba/${VERSION}/${APP}-${VERSION}.exe.sha256" .
+  build:
+    commands:
+      - scp "${APP}-${VERSION}.exe" "${APP}-${VERSION}.exe.sha256" ${LS_USER}@${LS_HOST}:${DEST_DIR}/
+      - |
+        ssh ${LS_USER}@${LS_HOST} bash -s <<'EOS'
+        set -euo pipefail
+        APP="'"$APP"'"
+        VERSION="'"$VERSION"'"
+        DEST_DIR="'"$DEST_DIR"'"
+        sudo mkdir -p "$DEST_DIR"
+        sudo chown -R $USER:$USER "$DEST_DIR"
+        cd "$DEST_DIR"
+        sha256sum -c "${APP}-${VERSION}.exe.sha256"
+        chmod 0644 "${APP}-${VERSION}.exe"
+        ln -sfn "${DEST_DIR}/${APP}-${VERSION}.exe" "${DEST_DIR}/latest"
+        ls -1t ${APP}-*.exe | tail -n +11 | xargs -r -I{} bash -c 'rm -f "{}" "{}.sha256"'
+        EOS
+artifacts:
+  files:
+    - '**/*'   # optional

@@ -1,0 +1,342 @@
+[
+  {
+    "timestamp": "2025-10-24T20:10:52.064201",
+    "element_type": "Icon",
+    "text": null,
+    "coordinates": {
+      "x": 8,
+      "y": 8,
+      "width": 44,
+      "height": 44
+    },
+    "centroid": {
+      "x": 30,
+      "y": 30
+    },
+    "confidence": 0.0,
+    "fill_ratio": 0.0
+  },
+  {
+    "timestamp": "2025-10-24T20:10:52.064201",
+    "element_type": "Icon",
+    "text": null,
+    "coordinates": {
+      "x": 71,
+      "y": 17,
+      "width": 27,
+      "height": 27
+    },
+    "centroid": {
+      "x": 84,
+      "y": 30
+    },
+    "confidence": 0.0,
+    "fill_ratio": 0.0
+  },
+  {
+    "timestamp": "2025-10-24T20:10:52.064201",
+    "element_type": "Icon",
+    "text": null,
+    "coordinates": {
+      "x": 378,
+      "y": 24,
+      "width": 13,
+      "height": 13
+    },
+    "centroid": {
+      "x": 384,
+      "y": 30
+    },
+    "confidence": 0.0,
+    "fill_ratio": 0.0
+  },
+  {
+    "timestamp": "2025-10-24T20:10:52.064201",
+    "element_type": "Icon",
+    "text": null,
+    "coordinates": {
+      "x": 430,
+      "y": 22,
+      "width": 17,
+      "height": 17
+    },
+    "centroid": {
+      "x": 438,
+      "y": 30
+    },
+    "confidence": 0.0,
+    "fill_ratio": 0.0
+  },
+  {
+    "timestamp": "2025-10-24T20:10:52.064201",
+    "element_type": "Icon",
+    "text": null,
+    "coordinates": {
+      "x": 1807,
+      "y": 21,
+      "width": 19,
+      "height": 18
+    },
+    "centroid": {
+      "x": 1816,
+      "y": 30
+    },
+    "confidence": 0.0,
+    "fill_ratio": 0.0
+  },
+  {
+    "timestamp": "2025-10-24T20:10:52.064201",
+    "element_type": "Icon",
+    "text": null,
+    "coordinates": {
+      "x": 1877,
+      "y": 21,
+      "width": 18,
+      "height": 18
+    },
+    "centroid": {
+      "x": 1886,
+      "y": 30
+    },
+    "confidence": 0.0,
+    "fill_ratio": 0.0
+  },
+  {
+    "timestamp": "2025-10-24T20:10:52.064201",
+    "element_type": "Icon",
+    "text": null,
+    "coordinates": {
+      "x": 108,
+      "y": 23,
+      "width": 39,
+      "height": 17
+    },
+    "centroid": {
+      "x": 127,
+      "y": 31
+    },
+    "confidence": 0.0,
+    "fill_ratio": 0.0
+  },
+  {
+    "timestamp": "2025-10-24T20:10:52.064201",
+    "element_type": "Icon",
+    "text": null,
+    "coordinates": {
+      "x": 150,
+      "y": 23,
+      "width": 67,
+      "height": 17
+    },
+    "centroid": {
+      "x": 183,
+      "y": 31
+    },
+    "confidence": 0.0,
+    "fill_ratio": 0.0
+  },
+  {
+    "timestamp": "2025-10-24T20:10:52.064201",
+    "element_type": "Icon",
+    "text": null,
+    "coordinates": {
+      "x": 131,
+      "y": 85,
+      "width": 21,
+      "height": 21
+    },
+    "centroid": {
+      "x": 141,
+      "y": 95
+    },
+    "confidence": 0.0,
+    "fill_ratio": 0.0
+  },
+  {
+    "timestamp": "2025-10-24T20:10:52.064201",
+    "element_type": "Icon",
+    "text": null,
+    "coordinates": {
+      "x": 1820,
+      "y": 82,
+      "width": 27,
+      "height": 27
+    },
+    "centroid": {
+      "x": 1833,
+      "y": 95
+    },
+    "confidence": 0.0,
+    "fill_ratio": 0.0
+  },
+  {
+    "timestamp": "2025-10-24T20:10:52.064201",
+    "element_type": "Icon",
+    "text": null,
+    "coordinates": {
+      "x": 24,
+      "y": 86,
+      "width": 20,
+      "height": 20
+    },
+    "centroid": {
+      "x": 34,
+      "y": 96
+    },
+    "confidence": 0.0,
+    "fill_ratio": 0.0
+  },
+  {
+    "timestamp": "2025-10-24T20:10:52.064201",
+    "element_type": "Icon",
+    "text": null,
+    "coordinates": {
+      "x": 77,
+      "y": 86,
+      "width": 20,
+      "height": 20
+    },
+    "centroid": {
+      "x": 87,
+      "y": 96
+    },
+    "confidence": 0.0,
+    "fill_ratio": 0.0
+  },
+  {
+    "timestamp": "2025-10-24T20:10:52.064201",
+    "element_type": "Text",
+    "text": "Please",
+    "coordinates": {
+      "x": 830,
+      "y": 286,
+      "width": 80,
+      "height": 33
+    },
+    "centroid": {
+      "x": 870,
+      "y": 302
+    },
+    "confidence": 96.0,
+    "fill_ratio": 0.19204545454545455
+  },
+  {
+    "timestamp": "2025-10-24T20:10:52.064201",
+    "element_type": "Text",
+    "text": "continue",
+    "coordinates": {
+      "x": 994,
+      "y": 286,
+      "width": 96,
+      "height": 33
+    },
+    "centroid": {
+      "x": 1042,
+      "y": 302
+    },
+    "confidence": 61.0,
+    "fill_ratio": 0.1893939393939394
+  },
+  {
+    "timestamp": "2025-10-24T20:10:52.064201",
+    "element_type": "Icon",
+    "text": null,
+    "coordinates": {
+      "x": 655,
+      "y": 240,
+      "width": 606,
+      "height": 669
+    },
+    "centroid": {
+      "x": 958,
+      "y": 574
+    },
+    "confidence": 0.0,
+    "fill_ratio": 0.0
+  },
+  {
+    "timestamp": "2025-10-24T20:10:52.064201",
+    "element_type": "Text",
+    "text": "Oo",
+    "coordinates": {
+      "x": 700,
+      "y": 638,
+      "width": 40,
+      "height": 40
+    },
+    "centroid": {
+      "x": 720,
+      "y": 658
+    },
+    "confidence": 65.0,
+    "fill_ratio": 0.1925
+  },
+  {
+    "timestamp": "2025-10-24T20:10:52.064201",
+    "element_type": "Text",
+    "text": "me",
+    "coordinates": {
+      "x": 869,
+      "y": 644,
+      "width": 48,
+      "height": 31
+    },
+    "centroid": {
+      "x": 893,
+      "y": 659
+    },
+    "confidence": 96.0,
+    "fill_ratio": 0.18010752688172044
+  },
+  {
+    "timestamp": "2025-10-24T20:10:52.064201",
+    "element_type": "Text",
+    "text": "Forgot",
+    "coordinates": {
+      "x": 1033,
+      "y": 641,
+      "width": 78,
+      "height": 37
+    },
+    "centroid": {
+      "x": 1072,
+      "y": 659
+    },
+    "confidence": 67.0,
+    "fill_ratio": 0.1812196812196812
+  },
+  {
+    "timestamp": "2025-10-24T20:10:52.064201",
+    "element_type": "Text",
+    "text": "Sign",
+    "coordinates": {
+      "x": 1031,
+      "y": 832,
+      "width": 58,
+      "height": 37
+    },
+    "centroid": {
+      "x": 1060,
+      "y": 850
+    },
+    "confidence": 74.0,
+    "fill_ratio": 0.16868592730661697
+  },
+  {
+    "timestamp": "2025-10-24T20:10:52.064201",
+    "element_type": "Text",
+    "text": "up",
+    "coordinates": {
+      "x": 1081,
+      "y": 836,
+      "width": 39,
+      "height": 33
+    },
+    "centroid": {
+      "x": 1100,
+      "y": 852
+    },
+    "confidence": 96.0,
+    "fill_ratio": 0.14607614607614608
+  }
+]

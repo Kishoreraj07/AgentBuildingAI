@@ -1,0 +1,173 @@
+/*
+Conditional Info Popup Styles for ABA Application
+Modern, clean design without box containers
+*/
+
+/* Main Dialog Container */
+QDialog {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:1,
+        stop:0 rgba(15, 20, 25, 0.98), stop:0.3 rgba(26, 31, 46, 0.95),
+        stop:0.7 rgba(45, 55, 72, 0.92), stop:1 rgba(74, 85, 104, 0.90));
+    border: 2px solid rgba(255, 255, 255, 0.08);
+    border-radius: 15px;
+}
+
+/* Title Label */
+QLabel#popupTitle {
+    color: qlineargradient(x1:0, y1:0, x2:1, y2:0,
+        stop:0 #667eea, stop:0.5 #f093fb, stop:1 #667eea);
+    font-weight: bold;
+    font-size: 18px;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    padding: 8px 12px;
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:0,
+        stop:0 rgba(102, 126, 234, 0.1), stop:1 rgba(240, 147, 251, 0.1));
+    border-radius: 8px;
+    border: none;
+}
+
+/* Window Control Buttons */
+QPushButton#minimizeBtn {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:1,
+        stop:0 #ffecd2, stop:1 #fcb69f);
+    border: none;
+    border-radius: 17px;
+    color: #2d3748;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+QPushButton#minimizeBtn:hover {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:1,
+        stop:0 #ff9a9e, stop:1 #fecfef);
+    transform: scale(1.05);
+}
+
+QPushButton#closeBtn {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:1,
+        stop:0 #ff9a9e, stop:1 #fecfef);
+    border: none;
+    border-radius: 17px;
+    color: #2d3748;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+QPushButton#closeBtn:hover {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:1,
+        stop:0 #ff6b6b, stop:1 #ee5a52);
+    color: white;
+    transform: scale(1.05);
+}
+
+/* Scroll Area */
+QScrollArea {
+    border: none;
+    background: transparent;
+    border-radius: 4px;
+}
+
+/* Scrollbar Styling */
+QScrollBar:vertical {
+    background: rgba(255, 255, 255, 0.1);
+    width: 12px;
+    border-radius: 6px;
+    border: none;
+}
+
+QScrollBar::handle:vertical {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:0,
+        stop:0 #667eea, stop:1 #764ba2);
+    border-radius: 6px;
+    min-height: 20px;
+}
+
+QScrollBar::handle:vertical:hover {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:0,
+        stop:0 #a8edea, stop:1 #fed6e3);
+}
+
+/* Condition Item Container */
+QWidget#conditionItem {
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+        stop:0 rgba(255, 255, 255, 0.08), stop:1 rgba(255, 255, 255, 0.04));
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    margin: 4px 0px;
+    padding: 12px;
+}
+
+/* Order Badge */
+QLabel#orderBadge {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:1,
+        stop:0 #667eea, stop:1 #764ba2);
+    color: #ffffff;
+    border-radius: 12px;
+    padding: 4px 10px;
+    font-size: 11px;
+    font-weight: bold;
+    min-width: 24px;
+    max-width: 40px;
+    text-align: center;
+}
+
+/* Priority Badge */
+QLabel#priorityBadge {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:1,
+        stop:0 #ff6b35, stop:1 #f7931e);
+    color: #ffffff;
+    border-radius: 10px;
+    padding: 3px 8px;
+    font-size: 10px;
+    font-weight: bold;
+    min-width: 20px;
+    text-align: center;
+}
+
+/* Condition Type Label */
+QLabel#conditionType {
+    color: #00d4aa;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 4px 8px;
+    background: rgba(0, 212, 170, 0.1);
+    border-radius: 6px;
+    border: 1px solid rgba(0, 212, 170, 0.2);
+}
+
+/* Task Range Label */
+QLabel#taskRange {
+    color: #e2e8f0;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 2px 0px;
+    background: transparent;
+}
+
+/* Detail Labels */
+QLabel#detailLabel {
+    color: #ffffff;
+    font-size: 12px;
+    padding: 6px 0px;
+    line-height: 1.4;
+    background: transparent;
+    border: none;
+}
+
+/* No Data Label */
+QLabel#noDataLabel {
+    color: #a0aec0;
+    font-style: italic;
+    font-size: 14px;
+    padding: 40px 20px;
+    text-align: center;
+    background: transparent;
+}
+
+/* Separator Line */
+QFrame#separator {
+    color: rgba(255, 255, 255, 0.2);
+    background-color: rgba(255, 255, 255, 0.2);
+    border: none;
+    max-height: 1px;
+}

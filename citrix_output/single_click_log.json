@@ -1,0 +1,31 @@
+[
+  {
+    "timestamp": "2025-12-05 01:08:44",
+    "event": "generic_click",
+    "region_info": {
+      "type": "Generic",
+      "coordinates": {
+        "top_left": {
+          "x": 764,
+          "y": 816
+        },
+        "top_right": {
+          "x": 764,
+          "y": 816
+        },
+        "bottom_left": {
+          "x": 764,
+          "y": 816
+        },
+        "bottom_right": {
+          "x": 764,
+          "y": 816
+        }
+      },
+      "centroid": {
+        "x": 764,
+        "y": 816
+      }
+    }
+  }
+]
